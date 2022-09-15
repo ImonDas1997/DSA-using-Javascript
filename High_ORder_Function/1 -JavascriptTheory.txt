@@ -1,0 +1,10 @@
+Function Defination-->functions are block of code which are reusable.we can reuse them and it always do a specific task.
+  1.Reusable
+  2.Special task
+
+syntaax--> functyion name(some parameters p1,p2)
+{
+  code block-->p1 and p2 accesable inside the function
+} 
+
+---------------------------------------------------------------------

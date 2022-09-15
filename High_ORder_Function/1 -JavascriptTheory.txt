@@ -4,7 +4,7 @@ Function Defination-->functions are block of code which are reusable.we can reus
 
 syntaax--> functyion name(some parameters p1,p2)
 {
-  code block-->p1 and p2 accesable inside the function
+  code block-->p1 and p2 accesable inside the Function
 } 
 
 ---------------------------------------------------------------------

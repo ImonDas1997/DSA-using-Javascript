@@ -11,3 +11,4 @@ let Result = arrf0bjects .filter(function (el) {
         return x;
         });
 console.log(Result);//o/p-->[ 'Nrupul Dev' ]
+

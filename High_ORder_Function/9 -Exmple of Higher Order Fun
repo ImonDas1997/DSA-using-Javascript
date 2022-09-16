@@ -1,0 +1,13 @@
+        //final exmple
+
+let arrf0bjects =
+        [{ firstName : "Nrupul", lastName : "Dev", place : "Bangalore"},
+        { firstName : "Prateek", lastName : "Shukla", place : "Ba" },
+        { firstName : "Yogesh", lastName : "Bhat", place : "Kolka" }]
+
+let Result = arrf0bjects .filter(function (el) {
+        return el.place == "Bangalore"; }).map(function (el, i) {
+        let x = el.firstName + " " + el.lastName;
+        return x;
+        });
+console.log(Result);//o/p-->[ 'Nrupul Dev' ]

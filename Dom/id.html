@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="masai" id="school">Masai school</p>
+    <h1 class="masai" id="imon">Masai school</h1>
+    <!-- ----------------------------------------------------------------------------------------------- -->
+    <button onClick="myFun()">Alert Quote</button>
+    <p class="masai" id="quote">Talk is cheap show me the code</p>
+  </body>
+</html>
+
+<script>
+  //getElementById
+  //should be in camle case
+  console.log(document.getElementById("school")); //entire <p> tag you will get there
+  console.log(document.getElementById("imon"));
+  //Inner text concept***********************
+  //i just want inner text to be displayed
+  console.log(document.getElementById("imon").innerText); //you will just get inner text
+  console.log(document.getElementById("imon").textContent); //you will just get inner text
+
+  //combbile 3 concepts-->onClick,alert,getElemetById***
+  function myFun() {
+    let msg = document.getElementById("quote").innerText;
+    alert(msg);
+  }
+</script>

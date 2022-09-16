@@ -146,3 +146,18 @@ let num3 = [3, 26, 32, 321, 1];
 console.log(result1)
 // initial value as second paramter inside reduce 
 // reduce (function () {},initail_value)
+//-------------------------------------------------------------------
+// forEach, map, filter, reduce -> input-array 
+
+                  // input  method   output (return value) 
+                  // array  forEach  undefined
+                  // array   map   array
+                  // array  filter  array 
+                  // array  reduce  single value 
+
+                  // forEach().map()  -- not possible
+                  // map().forEach() - possible 
+                  // map().filter() - possible
+                  // reduce().map() - not possible 
+
+//---------------------------------------------------------------------

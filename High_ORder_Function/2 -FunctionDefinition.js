@@ -17,3 +17,19 @@ for(let temp of tempInCelcious)//--using for of loop ->only array and astring di
   }
 
 //when a function does not return anything you will get undefined.
+//------------------------------------------------------------------------------------
+//Anonymous Function
+//we can store a function inside a variable that king of function we call Anonymous function
+
+
+let x = function () {
+console.log('call me ! I am Anonymous function')
+ }
+
+ function one()
+      {
+      x();
+      }
+      one()//-----------> here i am calling one function.
+//----------------------------------------------------------------------------------
+

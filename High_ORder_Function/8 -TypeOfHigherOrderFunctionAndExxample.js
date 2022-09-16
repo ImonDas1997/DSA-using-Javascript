@@ -12,7 +12,7 @@ let names = ["Imon", "raghuveer", "John", "Prabal"]; //-->itsd for element
 names.forEach(function (
   el,
   index,
-  array //--->actual calling dorEach function
+  array //--->actual calling forEach function
 ) {
   console.log(el); //printing all array values
   //output is ->

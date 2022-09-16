@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="age" type="text" placeholder="Enter age" value="" />
+     <button onClick="getDetails()">Submit</button>
+    <h1 id="res"></h1>
+  </body>
+</html>
+
+<script>
+  // 16 -> not eligible
+  // 18 -> just eligible
+  // 22 -> eligibleac
+
+  function getDetails() {
+    let age = document.getElementById("age").value; //getting the value from input field
+    if (age < 16) {
+      x = "Not eligible";
+    } else if (age == 18) {
+      x = "just eligible";
+    } else if (age > 22) {
+      x = " eligible";
+    }
+    document.getElementById("res").innerText = x; //binding in another field
+  }
+</script>

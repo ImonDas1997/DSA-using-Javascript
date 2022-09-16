@@ -1,0 +1,8 @@
+(Document object model)
+in order to build dynamic website we use dom.
+When a web page is loaded, the browser creates a Document Object Model of the page.
+
+The HTML DOM model is constructed as a tree of Objects:
+
+bridge the gap bw user and html -->we will combine js and html from now in order to to build dynamic website...
+everything in javascript is object.

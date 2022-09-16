@@ -127,6 +127,7 @@ let num2 = [3, 26, 32, 321, 1];
  { 
   return acc+el
 }) 
+console.log(result)
  // first call -> acc=3 acc+el=3+26=29, acc = 29 storing it in acc
  // 2nd call -> acc=29, acc+el 29+32=61 acc=61 
  // 3rd call -> acc=61, acc+el=61+321=382 acc=382 
@@ -136,3 +137,12 @@ let num2 = [3, 26, 32, 321, 1];
 
 
 //with any initual value
+
+let num3 = [3, 26, 32, 321, 1]; 
+ let result1 = num3.reduce (function (acc, el, i, arr) 
+{ 
+  return acc+el
+},10) // here10 is initial value
+console.log(result1)
+// initial value as second paramter inside reduce 
+// reduce (function () {},initail_value)

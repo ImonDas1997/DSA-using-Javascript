@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="name">imon das</p>
+    <button onClick="myFun()">change the avatar</button>
+    <!-- ---------------------------------------------------------------------------- -->
+    <h1 id="head">Click on login to continue</h1>
+    <button onClick="login()">login</button>
+
+    <button onClick="logout()">Logout</button>
+  </body>
+</html>
+<script>
+  function myFun() {
+    document.getElementById("name").innerText = "Imon change to Babai"; //chnage directlt html elements
+  }
+  //4 methods we are implementing
+  // onClick,getElementById, innerText, giving new value
+  // when login is clicked -login sucess
+  // when logout is clikced  -logout sucess
+
+  function login() {
+    document.getElementById("head").innerText = "Click on logout to logOff";
+  }
+  function logout() {
+    document.getElementById("head").innerText = "Click on login to continue";
+  }
+</script>

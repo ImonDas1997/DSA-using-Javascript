@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        background-color: grey;
+        border: 1px solid rgb(175, 13, 13);
+        display: inline;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      p {
+        /* visibility: hidden; */
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <button  onClick="colorChange()">Mark as Complete</button> -->
+    <p>like ME</p>
+    <h1>I am very famous</h1>
+  </body>
+</html>
+
+<script>
+  document.querySelector("h1").addEventListener("mouseover", hover); ///--->1st showing the text
+  function hover() {
+    document.querySelector("p").style.display = "block"; //changing athe style from javascript using style.requited property
+  }
+  document.querySelector("h1").addEventListener("mouseout", out); ///--->2nd hiding  the text
+  function out() {
+    document.querySelector("p").style.display = "none";
+  }
+  //complete tooltip dunctionality
+</script>

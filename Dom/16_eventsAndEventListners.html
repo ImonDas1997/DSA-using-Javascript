@@ -13,9 +13,15 @@
 </html>
 
 <script>
+  //basically we  prevent javascript code from html for that we use eventListner..look at the code all vent and dunction we are writing i the script tag
   //addEventListner("event_name","function_name")*************1st para pass any required event for exmple onClick is an event but when you write it inside the evenmtListner only write click
   function colorChange() {
     alert("EventListner is working fine");
   }
-  document.querySelector("button").addEventListener("click", colorChange);
+  function myFunc() {
+    document.querySelector("button").style.backgroundColor = "pink";
+  }
+  document.querySelector("button").addEventListener("click", colorChange); //best approach
+  document.querySelector("button").addEventListener("mouseover", myFunc);
+
 </script>

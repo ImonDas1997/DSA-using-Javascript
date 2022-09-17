@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>like ME</button>
+  </body>
+</html>
+
+<script>
+  //addEventListner("event_name","function_name")
+  // whenever you trigger any event, an event object will be formed ************
+  //// we can access that event object inside function parameter
+  document.querySelector("button").addEventListener("click", myFunc);
+
+  function myFunc(eventThiscanBeAnyName) {
+    //golden point.when we pass event as parameter of a function always we get event as obect.you can see object and key value pair in cosole and you can use it.that parameter name can be anything.because this is just a parameter
+    console.log(eventThiscanBeAnyName); //o/p->PointerEvent {isTrusted: true, pointerId: 1, width: 1, height: 1, pressure: 0, …}
+    console.log(eventThiscanBeAnyName.type); //using . notation and pinting type of event//o/p=>click
+    console.log(eventThiscanBeAnyName.target); //o/p=><button style="background-color: pink;">like ME</button>
+    console.log(eventThiscanBeAnyName.target.innerText); //o/p=>like ME
+  }
+</script>

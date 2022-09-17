@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="one">I amdhoni</h1>
+    <p id="two">I am masud</p>
+    <p class="six">I am snovita</p>
+    <h3 id="three">I am panda</h3>
+    <div id="four" class="special">I am saluma</div>
+    <p class="six">I am snovita</p>
+    <p class="six">I am nandu</p>
+    <p class="six">I am monica</p>
+
+    <h4 class="five" class="special">I am jisma</h4>
+  </body>
+</html>
+<script>
+  //   document.querySelector("h1").style.backgroundColor = "green";
+  //   document.querySelector("p").style.backgroundColor = "red";
+
+  document.querySelector("h1~p").style.backgroundColor = "pink"; //we are using combinator but still queryselector only pick 1st matches record not all.
+
+  document.querySelector("body>div+p").style.backgroundColor = "pink"; //body-->div-->p select korche only 1st record .but we have 3 <p> record .
+</script>

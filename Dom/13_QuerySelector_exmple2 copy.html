@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="one">I am dhoni-1</p>
+    <p id="two">I am dhoni-2</p>
+    <p id="three">I am dhoni-3</p>
+    <p id="four" class="special">I am dhoni-4</p>
+    <p class="five" class="special">I am dhoni-5</p>
+    <p class="six">I am dhoni-6</p>
+  </body>
+</html>
+<script>
+  //Main syntax -----> document.querySelector("#one").style.color = "red"; ---->always use # for.so now on only will will be using query selector...
+
+  //here we are using querySelector so we do the same what we do with getelementById but quertyselector you have to mention if you are calling class you have to use [.]and if you are using if use[#] and call it so its a generic selector
+  document.querySelector("#one").style.color = "red"; //if we click the button the masai school clr should be changed so that here i use this style method.[.style is a property here and you can set ny style]
+  document.querySelector("#two").style.backgroundColor = "yellow"; //[setup backgroround colour and use all camle case]
+
+  //-----------------------------------------------------------------------------------
+  //fetch  player using class
+
+  document.querySelector(".five").style.backgroundColor = "red";
+  document.querySelector(".six").style.backgroundColor = "red";
+  //--------------------------------------------------------------------------------------
+  //********if you have same class name for all element only 1st element will be picked by query selsector that is one of the property
+  document.querySelector(".special").style.backgroundColor = "green";
+</script>

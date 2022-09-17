@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background-color: grey;
+        border: 0;
+        color: white;
+        border-radius: 10px;
+        padding: 5px 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <button id="pp" onClick="colorChange()">Mark as Complete</button>
+    </body>
+  </body>
+</html>
+
+<script>
+  function colorChange() {
+    document.getElementById("pp").innerText = "I am new Button";
+    document.getElementById("pp").style.backgroundColor = "green"; //[setup backgroround colour and use all camle case]
+  }
+</script>

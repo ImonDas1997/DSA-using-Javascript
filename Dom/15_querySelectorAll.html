@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p class="same">I amdhoni</p>
+    <p class="same">I am masud</p>
+    <p class="same">I am snovita</p>
+    <p class="same">I am panda</p>
+    <p class="same" class="special">I am saluma</p>
+    <p class="same">I am snovita</p>
+    <p class="same">I am nandu</p>
+    <p class="same">I am monica</p>
+    <p class="same">I am jisma</p>
+  </body>
+</html>
+<script>
+  //querySelectorAll always return value as array so you have to give index value always..
+  //e.g===. document.querySelectorAll(".same")[i]
+  //here we are looping through for loop and assigning array value using i and see output
+  let countOfClass=document.querySelectorAll(".same");//here we are geeting all class and counting
+  for (i = 0; i < countOfClass.length; i++) {
+    document.querySelectorAll(".same")[i].style.backgroundColor = "pink";
+  }
+</script>

@@ -33,6 +33,8 @@
       <!-- when type 4 get the value 4 in the console -->
       <!-- sol--when i click on 1 we can catch the target of it and we can get inner text of it thats all.*********** -->
     </div>
+    <div class="show">
+      </div>
   </body>
 </html>
 <script>
@@ -40,13 +42,14 @@
   //("#container>div") from here we are getting 4 divs.
   console.log(boxes);
   boxes.forEach(function (el) {
-    el.addEventListener("click", myFun); //we are getting event object but not passing in parameter so we will pass and target the innertext in the next block
+    el.addEventListener("click", myFun); //once you click that we are getting event object but not passing in parameter so we will pass and target the innertext in the next block
   });
 
   function myFun(event) {
     console.log(event);
     console.log(event.target);
     console.log(event.target.innerText);
+    document.querySelector(".show").style.innerText = "pink";
   }
   // ------------------------------------------------------------------------------------------------------------
 </script>

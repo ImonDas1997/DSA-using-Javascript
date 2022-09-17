@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <button  onClick="colorChange()">Mark as Complete</button> -->
+    <button>like ME</button>
+  </body>
+</html>
+
+<script>
+  //addEventListner("event_name","function_name")*************1st para pass any required event for exmple onClick is an event but when you write it inside the evenmtListner only write click
+  function colorChange() {
+    alert("EventListner is working fine");
+  }
+  document.querySelector("button").addEventListener("click", colorChange);
+</script>

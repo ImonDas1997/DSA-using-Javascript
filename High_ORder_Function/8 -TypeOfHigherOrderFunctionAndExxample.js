@@ -75,7 +75,9 @@ console.log(res2); //output is -->[ 9, 4, 16, 4, 1, 36 ]
 //forEach there is additional charges
 let foreachDoesnotReturnArr = [30, 20, 4, 2, 1, 6];
 let box = [];
-foreachDoesnotReturnArr.forEach(function (el) {
+foreachDoesnotReturnArr.forEach(function (
+  el //---this is called callback dunction(el is just 1st expected parameter and get all elements from array)
+) {
   box.push(el ** 2); //----> just pushing inside a empty arr and we are handling the situation
   console.log(box);
 });

@@ -8,6 +8,8 @@
   </head>
   <body>
     <button>like ME</button>
+    <button id="hate">hate ME</button>
+
   </body>
 </html>
 
@@ -15,6 +17,12 @@
   //addEventListner("event_name","function_name")
   // whenever you trigger any event, an event object will be formed ************
   //// we can access that event object inside function parameter
+  document.querySelector("#hate").addEventListener("click", myfunct2);//onclick event ta click korar por ekta object create hoi jeta amra dekhte pai na .but oi object ta k dhorar jonno and ekta jekono namer parameter pass korai  function er sathe .parameter pass koralei amra object dhore nebo and console log korale tumi sob object ta k dekhte pabe and nijer moto use korte parbe inside the function.
+  function myfunct2(anyNameAsEventParameter)
+  {
+    console.log(anyNameAsEventParameter);
+  }
+
   document.querySelector("button").addEventListener("click", myFunc);
 
   function myFunc(eventThiscanBeAnyName) {
@@ -24,4 +32,6 @@
     console.log(eventThiscanBeAnyName.target); //o/p=><button style="background-color: pink;">like ME</button>
     console.log(eventThiscanBeAnyName.target.innerText); //o/p=>like ME
   }
+ 
+
 </script>

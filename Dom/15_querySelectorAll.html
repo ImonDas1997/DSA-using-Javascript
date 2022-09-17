@@ -8,22 +8,35 @@
   </head>
   <body>
     <p class="same">I amdhoni</p>
-    <p class="same">I am masud</p>
+    <p class="are">I am masud</p>
     <p class="same">I am snovita</p>
-    <p class="same">I am panda</p>
-    <p class="same" class="special">I am saluma</p>
-    <p class="same">I am snovita</p>
-    <p class="same">I am nandu</p>
-    <p class="same">I am monica</p>
-    <p class="same">I am jisma</p>
+    <p class="are">I am panda</p>
+    <p class="same">I am saluma</p>
+    <p class="pp">I am snovita</p>
+    <p class="two">I am nandu</p>
+    <p class="pp">I am monica</p>
+    <p class="two">I am jisma</p>
   </body>
 </html>
 <script>
   //querySelectorAll always return value as array so you have to give index value always..
   //e.g===. document.querySelectorAll(".same")[i]
   //here we are looping through for loop and assigning array value using i and see output
-  let countOfClass=document.querySelectorAll(".same");//here we are geeting all class and counting
+  let countOfClass = document.querySelectorAll(".same"); //here we are geeting all class and counting
   for (i = 0; i < countOfClass.length; i++) {
     document.querySelectorAll(".same")[i].style.backgroundColor = "pink";
   }
+
+  let countOfClass1 = document.querySelectorAll(".two"); //here we are geeting all class and counting
+  for (i = 0; i < countOfClass1.length; i++) {
+    countOfClass1[i].style.backgroundColor = "blue";
+  }
+  let countOfClass2 = document.querySelectorAll(".are"); //***using forEach callback function same
+  countOfClass2.forEach(function (el) {
+    el.style.backgroundColor = "green";
+  });
+  let countOfClass3 = document.querySelectorAll(".pp"); //***using forEach callback function same
+  countOfClass3.forEach(function (el) {
+    el.style.backgroundColor = "brown";
+  });
 </script>

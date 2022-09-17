@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 60px;
+        gap: 10px;
+      }
+      #container > div {
+        background-color: teal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div>1</div>
+      <!-- when type 1 get the value 1 in the console -->
+      <div>2</div>
+      <!-- when type 2 get the value 2 in the console -->
+      <div>3</div>
+      <!-- when type 3 get the value 3 in the console -->
+      <div>4</div>
+      <!-- when type 4 get the value 4 in the console -->
+      <!-- sol--when i click on 1 we can catch the target of it and we can get inner text of it thats all.*********** -->
+    </div>
+  </body>
+</html>
+<script>
+  let boxes = document.querySelectorAll("#container>div"); //we will get [] actual name all nodes .
+  //("#container>div") from here we are getting 4 divs.
+  console.log(boxes);
+  boxes.forEach(function (el) {
+    el.addEventListener("click", myFun); //we are getting event object but not passing in parameter so we will pass and target the innertext in the next block
+  });
+
+  function myFun(event) {
+    console.log(event);
+    console.log(event.target);
+    console.log(event.target.innerText);
+  }
+  // ------------------------------------------------------------------------------------------------------------
+</script>

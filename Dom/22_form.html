@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form> 
+        <!-- Wrap your input tags inside form tag. 2 Instead of button tag you should -->
+     <input id="name" type="text" placeholder="enter name"/> 
+     <input id="mbl" type="number" placeholder="enter mobile"/> 
+     <input type="submit" />
+    </form>
+    <!-- Instead of button tag you should use <input type="submit" /> Add eventListener to form tag. -->
+    
+
+     
+     </body> 
+     </html> 
+     <script> 
+     document.querySelector("form").addEventListener("submit", myFun) 
+     
+    function myFun(event) {
+        event.preventDefault(); 
+    let entered_name = document.querySelector("#name").value; 
+    let mobile = document.querySelector("#mbl").value; 
+    console.log(entered_name, mobile); 
+    } 
+     </script>

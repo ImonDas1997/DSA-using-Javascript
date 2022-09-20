@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <button>Create h1</button> 
+</body>
+</html> 
+<script> 
+//  1. <h1></h1> creating h1 element 
+//  2. <h1>Heading 1</h1> - writing innerText 
+//  3. I should append h1 tag to body 
+document.querySelector("button").addEventListener("click", myFun) 
+function myFun() { 
+    //createElement("tagName") 
+let h1Tag = document.createElement("h1");
+h1Tag.innerText = "Heading 1";
+document.querySelector("body").append(h1Tag);
+} 
+    
+</script> 

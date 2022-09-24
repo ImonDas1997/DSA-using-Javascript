@@ -1,1 +1,5 @@
 its just a browser storage in html.
+
+The local storage is a type of HTML5 offline storage that allows user string data to be saved synchronously in their browser. Information is kept in name and value pairs and not available between different browsers on the same device.
+
+Local storage can be used as an alternative to cookies. It provides a chance to store more data. 4KB is the limit for cookies, and local storage allows using up to 10MB, depending on the browser. Moreover, the process is more efficient – the browser does not send any local storage data to the server in any step.

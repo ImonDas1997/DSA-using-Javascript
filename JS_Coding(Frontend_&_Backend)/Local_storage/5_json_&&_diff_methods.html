@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>json.stringify</h1>
+  </body>
+</html>
+
+<script>
+  let names = ["kamal", "Ganesh", "Akash"]; //it is for all array
+  //names = JSON.stringify(names);
+
+  localStorage.setItem("namesArr", JSON.stringify(names)); //we are iuing stingfy method to convert now you will get  array form// JSON.stringify()
+  let student_names = JSON.parse(localStorage.getItem("namesArr"));
+  console.log(student_names[0]);
+
+  //-----------------------------------------------------------------------------------------------------------
+  //now test for obj
+  let names_obj = {
+    name1: "Kiran",
+    name2: "Prabal",
+  };
+  localStorage.setItem("names_in_obj", JSON.stringify(names_obj));
+  let dataFromLS = JSON.parse(localStorage.getItem("names_in_obj"));
+  console.log(dataFromLS.name1);
+</script>
+
+<!-- //sending data from frntend to backend (arr to string ) use JSON.stringify
+//sending data from backend to frontend (string to array) use JSON.parse -->

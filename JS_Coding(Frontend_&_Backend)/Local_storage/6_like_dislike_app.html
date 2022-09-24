@@ -11,8 +11,8 @@
       src="https://images.unsplash.com/photo-1655749534279-20792c3a546d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
       alt=""
     />
-    <h1>Likes count : <span>0</span></h1>
-    <h2>Dislikes count : <span>0</span></h2>
+    <h1>Likes count : <span></span></h1>
+    <h2>Dislikes count : <span></span></h2>
     <div>
       <button onClick="likeFun()">Like</button>
       <button onClick="dislikeFun()">Dislike</button>
@@ -20,14 +20,30 @@
   </body>
 </html>
 <script>
-  let likeCount = 0;
-  let dislikeCount = 0;
+  let likeCount;
+  if (localStorage.getItem("Likes") == null) {
+    likeCount = 0;
+  } else {
+    likeCount = localStorage.getItem("Likes");
+  }
+  document.querySelector("h1>span").innerText = likeCount;
+  let dislikeCount = localStorage.getItem("Dislikes") || 0; //or combination comparison....alwats true value print..if null value is there print 0 as 0 is false va;ue and null is not true and false.
+
+  //   if (localStorage.getItem("Dislikes") == null) {
+  //     dislikeCount = 0;
+  //   } else {
+  //     dislikeCount = localStorage.getItem("Dislikes");
+  //   }
+
+  document.querySelector("h2>span").innerText = dislikeCount;
   function likeFun() {
     likeCount++;
+    localStorage.setItem("Likes", likeCount);
     document.querySelector("h1>span").innerText = likeCount;
   }
   function dislikeFun() {
     dislikeCount++;
+    localStorage.setItem("Dislikes", dislikeCount);
     document.querySelector("h2>span").innerText = dislikeCount;
   }
 </script>

@@ -1,5 +1,27 @@
-its just a browser storage in html.
+its just a browser storage in html.its kind of webApi
 
 The local storage is a type of HTML5 offline storage that allows user string data to be saved synchronously in their browser. Information is kept in name and value pairs and not available between different browsers on the same device.
 
 Local storage can be used as an alternative to cookies. It provides a chance to store more data. 4KB is the limit for cookies, and local storage allows using up to 10MB, depending on the browser. Moreover, the process is more efficient – the browser does not send any local storage data to the server in any step.
+
+
+path-->[go to console--> application-->local stoare] all data will be in key value pair.
+
+1.Local storage will save your data in terms of key-value pairs
+2.it will store upro 10MB
+3.its a web api
+4.insensetive information(id/tokem)
+5.insucure and ithas linited storage capacity(10mb)
+
+
+
+**Methods odf local storage-->
+1.storing something in ls -->setItem();
+2. Reading LS items - getItem() 
+3. Removing - removeItem() 
+4.clearing all data -> clear()
+
+Local storage stores only strings and numbers but using some methods it can store
+1. Array
+2. Objects 
+3. Array of objects                

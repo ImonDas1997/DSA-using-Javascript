@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Local Storage</h1>
+  </body>
+</html>
+
+<script>
+  localStorage.setItem("student-1", "imon");
+  localStorage.setItem("avengers-1", "tony");
+  //local storates wont allow duoplication only take latest value
+  localStorage.setItem("student-1", "jisma");
+  localStorage.setItem("avengers-1", "nandu"); //always will get new value check both key are same and taking latest value.
+//you can store numbers
+  localStorage.setItem("mobile", 8286181617);
+  localStorage.setItem("mobile1", 822121617);
+</script>

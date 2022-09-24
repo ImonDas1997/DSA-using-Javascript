@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Local Storage</h1>
+  </body>
+</html>
+
+<script>
+  localStorage.setItem("student-1", "imon");
+  localStorage.setItem("avengers-1", "tony");
+  localStorage.setItem("student-1", "jisma");
+  localStorage.setItem("avengers-1", "nandu");
+  localStorage.setItem("mobile", 8286181617);
+  localStorage.setItem("mobile1", 822121617);
+
+  //getting value here
+
+  let name = localStorage.getItem("student-1");
+  let name1 = localStorage.getItem("avengers-1");
+  let name2 = localStorage.getItem("mobile");
+
+  console.log(name);
+  console.log(name1);
+  console.log(name2);
+
+</script>

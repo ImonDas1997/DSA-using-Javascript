@@ -1,166 +1,227 @@
-.container9 {  display: grid;
-    grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr 0.9fr 1.4fr;
-    grid-template-rows: 0.5fr ;
-    margin-top: 20px;
-    gap: 0px 25px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . . . . . . .";
-  }
-      .container8 {  display: grid;
-    grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr 0.9fr 1.4fr;
-    grid-template-rows: 0.5fr ;
-    margin-top: 20px;
-    gap: 0px 25px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . . . . . . .";
-  }
-      .container7 {  display: grid;
-    grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr;
-    grid-template-rows: 0.5fr;
-    gap: 0px 25px;
-    margin-top: 20px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . . . . .";
-  }
-      .container6 {  display: grid;
-    grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr;
-    grid-template-rows: 0.5fr;
-    gap: 0px 25px;
-    margin-top: 20px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . . . . .";
-  }
-      .container5 {  display: grid;
-    grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr 0.9fr 1.4fr;
-    grid-template-rows: 0.5fr ;
-    margin-top: 20px;
-    gap: 0px 25px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . . . . . . .";
-  }
-    .container4 {  display: grid;
-    grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr;
-    grid-template-rows: 0.5fr;
-    gap: 0px 25px;
-    margin-top: 20px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . . . . .";
-  }
-  
-      .container3 {  display: grid;
-    grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr 1fr;
-    grid-template-rows: 0.5fr;
-    gap: 0px 25px;
-    margin-top: 20px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . . . . . .";
-  }
-  
-  .container2 {  display: grid;
-    grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr;
-    grid-template-rows: 0.5fr;
-    gap: 0px 25px;
-    margin-top: 20px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . . . . .";
-  }
-  
-  
-    .container1 {  display: grid;
-    grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr 0.9fr 1.4fr;
-    grid-template-rows: 0.5fr ;
-    margin-top: 20px;
-    gap: 0px 25px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . . . . . . .";
-  }
-  
-  
-  
-      
-      .container {  display: grid;
-    grid-template-columns: 0.7fr 1.2fr 2.4fr 0.7fr 0.7fr 0.6fr 0.7fr;
-    grid-template-rows: 0.5fr 1.4fr 1.1fr;
-    height: 108px;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . . . . . ."
-      ". . . . . . ."
-      ". . . . . . .";
-  }
-  body {
-    font-family: Arial;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  form.example input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
-    width: 80%;
-    background: #f1f1f1;
-  }
-  
-  form.example button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: #2196F3;
-    color: white;
-    font-size: 17px;
-    border: 1px solid grey;
-    border-left: none;
-    cursor: pointer;
-  }
-  
-  form.example button:hover {
-    background: #0b7dda;
-  }
-  
-  form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  .container1>div > img {
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;
-  }
-  .container2>div > img {
-    object-fit: cover;
-    width: 233px;
-  }
-  .container3>div > img {
-    width: 200px;
-    max-height: 100%;
-  }
-  .container5>div > img {
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;
-  }
-  .container8>div > img {
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;
-  }
-  .container9>div > img {
-    object-fit: cover;
-    width: 100%;
-    max-height: 100%;
-  }
+.container9 {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr 0.9fr 1.4fr;
+  grid-template-rows: 0.5fr;
+  margin-top: 20px;
+  gap: 0px 25px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . . . .";
+}
+.container8 {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr 0.9fr 1.4fr;
+  grid-template-rows: 0.5fr;
+  margin-top: 20px;
+  gap: 0px 25px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . . . .";
+}
+.container7 {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr;
+  grid-template-rows: 0.5fr;
+  gap: 0px 25px;
+  margin-top: 20px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . .";
+}
+.container6 {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr;
+  grid-template-rows: 0.5fr;
+  gap: 0px 25px;
+  margin-top: 20px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . .";
+}
+.container5 {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr 0.9fr 1.4fr;
+  grid-template-rows: 0.5fr;
+  margin-top: 20px;
+  gap: 0px 25px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . . . .";
+}
+.container4 {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr;
+  grid-template-rows: 0.5fr;
+  gap: 0px 25px;
+  margin-top: 20px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . .";
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr 1fr;
+  grid-template-rows: 0.5fr;
+  gap: 0px 25px;
+  margin-top: 20px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . . .";
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr;
+  grid-template-rows: 0.5fr;
+  gap: 0px 25px;
+  margin-top: 20px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . .";
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr 0.8fr 0.9fr 0.9fr 0.9fr 0.9fr 1.4fr;
+  grid-template-rows: 0.5fr;
+  margin-top: 20px;
+  gap: 0px 25px;
+  grid-auto-flow: row;
+  grid-template-areas: ". . . . . . . .";
+}
+.container10 {
+  display: grid;
+  grid-template-columns: 0.2fr 2.6fr 0.2fr;
+  gap: 0px 0px;
+  margin-top: 40px;
+  grid-auto-flow: row;
+}
+.container11 {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr 1.2fr 1.1fr 1fr 0.7fr;
+  margin-top: 40px;
+  gap: 0px 52px;
+  grid-auto-flow: row;
+}
+.container12 {
+  display: grid;
+  grid-template-columns: 0.4fr 0.7fr 2.5fr 0.6fr;
+  margin-top: 40px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+.container13 {
+  display: grid;
+  grid-template-columns: 0.4fr 2.9fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.7fr 1.2fr 2.4fr 0.7fr 0.7fr 0.6fr 0.7fr;
+  grid-template-rows: 0.5fr 1.4fr 1.1fr;
+  height: 108px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . .";
+}
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.container1 > div > img {
+  object-fit: cover;
+  width: 184px;
+  max-height: 100%;
+}
+.container2 > div > img {
+  object-fit: cover;
+  width: 264px;
+}
+.container3 > div > img {
+  width: 200px;
+  max-height: 100%;
+}
+.container5 > div > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+.container8 > div > img {
+  object-fit: cover;
+  width: 197px;
+  max-height: 100%;
+}
+.container9 > div > img {
+  object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  width: 200px;
+  max-height: 100%;
+}
+.container4 > div > img {
+  object-fit: cover;
+  width: 343px;
+  max-height: 100%;
+}
+.container7 > div > img {
+  object-fit: cover;
+  width: 343px;
+  max-height: 100%;
+}
+.container6 > div > img {
+  object-fit: cover;
+  width: 343px;
+  max-height: 100%;
+}
+.container11 > div > li > a {
+  color: black;
+}
+.container12 > div > h4 {
+  margin-top: 60px;
+  font-size: 17px;
+  font-family: inherit;
+  color: RGB(110, 211, 142);
+}
+.container12 > div > p {
+  font-family: inherit;
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: RGB(234, 234, 234);
+  margin-top: 40px;
+  color: white;
+  text-align: center;
+}

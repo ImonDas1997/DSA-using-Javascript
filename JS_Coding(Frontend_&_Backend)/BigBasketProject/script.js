@@ -35,7 +35,7 @@ let itemData = [
     price: 1120,
   },
 ];
-let cartArr = JSON.parse(localStorage.getItem("cart_items"))|| null;
+let cartArr = JSON.parse(localStorage.getItem("cart_items")) || null;
 itemData.forEach(function (el) {
   let card = document.createElement("div");
   let productImg = document.createElement("img");
@@ -55,8 +55,15 @@ itemData.forEach(function (el) {
 
 function addToCart(el) {
   cartArr.push(el);
-  localStorage.setItem("cart_items",JSON.stringify(cartArr));
+  localStorage.setItem("cart_items", JSON.stringify(cartArr));
 }
-  let cartTotal = JSON.parse(localStorage.getItem("cart_items"));
+let cartTotal = JSON.parse(localStorage.getItem("cart_items"));
 document.querySelector("#idid").innerText = cartTotal.length;
-document.querySelector("#idid").style.color="red";
+document.querySelector("#idid").style.color = "red";
+let total_price = cartTotal.reduce(function (acc, el) {
+  return acc + el.price;
+}, 0);
+document.querySelector("#rr").innerText = total_price;
+document.querySelector("#rr").style.color = "red";
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #cartItems {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        margin-top: 40px;
+        gap: 20px;
+        width: 224vh;
+        max-height: 100%;
+      }
+      #cartItems > div > img {
+        width: 100%;
+      }
+      #cartItems > div {
+        text-align: center;
+        padding-bottom: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html"><button>Go to Main Page</button></a>
+    <div id="cartItems"></div>
+  </body>
+</html>
+<script>
+  let cartItemFromLS = JSON.parse(localStorage.getItem("cart_items"));
+
+  cartItemFromLS.forEach(function (el) {
+    let card = document.createElement("div");
+    let productImg = document.createElement("img");
+    productImg.src = el.image_url;
+    let title = document.createElement("h3");
+    title.innerText = el.name;
+    let price = document.createElement("p");
+    price.innerText = el.price;
+    let btn = document.createElement("button");
+    btn.addEventListener("click", function () {
+      addToCart(el);
+    });
+    card.append(productImg, title, price, btn);
+    btn.innerText = "Add to Cart";
+    document.querySelector("#cartItems").append(card);
+  });
+</script>

@@ -233,13 +233,17 @@ form.example::after {
 }
 
 #item {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  margin-top: 40px;
-  gap: 20px;
-  width: 224vh;
-  max-height: 100%;
+      display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 49px;
+    padding-block: 31px;
+    padding-left: 51px;
+    padding-right: 206px;
+    gap: 20px;
+    width: 223vh;
+    max-height: 100%;
 }
+
 #item > div > img {
   width: 100%;
 }
@@ -248,3 +252,4 @@ form.example::after {
   padding-bottom: 20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+

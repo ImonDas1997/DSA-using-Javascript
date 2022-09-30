@@ -94,11 +94,14 @@ itemData.forEach(function (el) {
   title.innerText = el.name;
   let price = document.createElement("p");
   price.innerText = "Price :"+el.price;
+  let delivery = document.createElement("p");
+  delivery.innerText = "Standard Delivery:Tomorrow";
+
   let btn = document.createElement("button");
   btn.addEventListener("click", function () {
     addToCart(el);
   });
-  card.append(productImg, title, price, btn);
+  card.append(productImg, title, price, delivery,btn);
   btn.innerText = "Add to Cart";
   document.querySelector("#item").append(card);
 });

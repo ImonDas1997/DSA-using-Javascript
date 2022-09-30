@@ -84,7 +84,8 @@ let itemData = [
     price: 20,
   },
 ];
-let cartArr = JSON.parse(localStorage.getItem("cart_items")) || null;
+let cartArr = JSON.parse(localStorage.getItem("cart_items")) || []; 
+
 itemData.forEach(function (el) {
   let card = document.createElement("div");
   let productImg = document.createElement("img");

@@ -44,7 +44,7 @@
     btn.addEventListener("click", function () {
       addToCart(el);
     });
-    card.append(productImg, title, price, btn);
+    card.append(productImg, title, price);
     btn.innerText = "Add to Cart";
     document.querySelector("#cartItems").append(card);
   });

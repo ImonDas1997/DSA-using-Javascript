@@ -51,7 +51,6 @@
       alert("Login Pass");
       let current_user=user_records.filter((v)=>{return v.user_email==email && v.user_password==psw})[0]
  localStorage.setItem('name',current_user.user_name);
- localStorage.setItem('email',current_user.email);
        window.location.href = "index.html";
     } else {
       alert("Login Fail");

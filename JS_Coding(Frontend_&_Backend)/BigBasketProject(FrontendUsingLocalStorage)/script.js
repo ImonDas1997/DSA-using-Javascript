@@ -124,7 +124,7 @@ let itemList = [
     id: 6,
     image_url:
       "https://www.bigbasket.com/media/uploads/p/s/274795_4-lux-beauty-soap-for-glowing-skin-rose-vitamin-e-mega.jpg ",
-      name: "Rose & Vitamin E Soap Bar, For Soft Glowing Skin with 7 Beauty Ingredients",
+    name: "Rose & Vitamin E Soap Bar, For Soft Glowing Skin with 7 Beauty Ingredients",
     price: 135,
   },
   {
@@ -170,7 +170,7 @@ let itemList = [
     price: 345,
   },
 ];
-let cartArr = JSON.parse(localStorage.getItem("cart_items")) || []; 
+let cartArr = JSON.parse(localStorage.getItem("cart_items")) || [];
 
 itemData.forEach(function (el) {
   let card = document.createElement("div");
@@ -179,7 +179,7 @@ itemData.forEach(function (el) {
   let title = document.createElement("h3");
   title.innerText = el.name;
   let price = document.createElement("p");
-  price.innerText = "Price :"+el.price;
+  price.innerText = "Price :" + el.price;
   let delivery = document.createElement("p");
   delivery.innerText = "Standard Delivery:Tomorrow";
   let time = document.createElement("p");
@@ -189,7 +189,7 @@ itemData.forEach(function (el) {
   btn.addEventListener("click", function () {
     addToCart(el);
   });
-  card.append(productImg, title, price, delivery,time,btn);
+  card.append(productImg, title, price, delivery, time, btn);
   btn.innerText = "Add to Cart";
   document.querySelector("#item").append(card);
 });
@@ -200,7 +200,7 @@ itemList.forEach(function (el) {
   let title = document.createElement("h3");
   title.innerText = el.name;
   let price = document.createElement("p");
-  price.innerText = "Price :"+el.price;
+  price.innerText = "Price :" + el.price;
   let delivery = document.createElement("p");
   delivery.innerText = "Standard Delivery:Tomorrow";
   let time = document.createElement("p");
@@ -210,7 +210,7 @@ itemList.forEach(function (el) {
   btn.addEventListener("click", function () {
     addToCart(el);
   });
-  card.append(productImg, title, price, delivery,time,btn);
+  card.append(productImg, title, price, delivery, time, btn);
   btn.innerText = "Add to Cart";
   document.querySelector("#item").append(card);
 });
@@ -228,9 +228,9 @@ let total_price = cartTotal.reduce(function (acc, el) {
 document.querySelector("#rr").innerText = total_price;
 document.querySelector("#rr").style.color = "red";
 
-let Username = localStorage.getItem("name") ? localStorage.getItem("name") : "";
-console.log(Username);
-if (Username == "") {
+let name = localStorage.getItem("name") ? localStorage.getItem("name") : "";
+console.log(name);
+if (name == "") {
   alert("U need to login first");
   window.location.href = "Login.html";
 }

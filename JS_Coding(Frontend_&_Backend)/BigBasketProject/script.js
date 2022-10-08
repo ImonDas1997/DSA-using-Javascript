@@ -228,9 +228,9 @@ let total_price = cartTotal.reduce(function (acc, el) {
 document.querySelector("#rr").innerText = total_price;
 document.querySelector("#rr").style.color = "red";
 
-let name = localStorage.getItem("name") ? localStorage.getItem("name") : "";
-console.log(name);
-if (name == "") {
+let Username = localStorage.getItem("name") ? localStorage.getItem("name") : "";
+console.log(Username);
+if (Username == "") {
   alert("U need to login first");
   window.location.href = "Login.html";
 }

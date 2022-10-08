@@ -234,7 +234,6 @@ if (name == "") {
   alert("U need to login first");
   window.location.href = "Login.html";
 }
-
 function Logout() {
   localStorage.removeItem("name");
   localStorage.removeItem("email");

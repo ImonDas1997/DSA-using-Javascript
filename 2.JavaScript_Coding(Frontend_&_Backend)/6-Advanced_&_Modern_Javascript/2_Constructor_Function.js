@@ -72,9 +72,9 @@ console.log(this);//we just get emplty object
 //new -> returning the value ( object )****
 //this -> intialize ****
 
-//call, apply, bind
+//call, apply, bind ---->> ******
 
-//its related to functions.
+//its related to functions.ncg
 let bedroom = {
     name: 'bedroom',
     purpose: 'sleep',
@@ -85,7 +85,7 @@ let bedroom = {
     purpose: 'tv',
   };
   
-  let kitchen = {
+  let kitchen = { 
     name: 'kitchen',
     purpose: 'cook',
   

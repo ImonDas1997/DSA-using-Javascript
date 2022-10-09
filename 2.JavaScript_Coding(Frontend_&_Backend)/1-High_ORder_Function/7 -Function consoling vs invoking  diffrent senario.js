@@ -11,11 +11,11 @@ console.log(x1);//you will not get ans because u r consoling  2 time from both t
 
 //--------------------------------------------------------------
 //this is the proper way of writing function----correct-------
-let x = function()//--this line we are storing function in a variable
+let y = function()//--this line we are storing function in a variable
 {
   console.log("I am another way of writing fun")
 }
-x();//-->invoking.
+y();//-->invoking.
 //OR
 let x = function() {
   res = "I am another way of writing fun";

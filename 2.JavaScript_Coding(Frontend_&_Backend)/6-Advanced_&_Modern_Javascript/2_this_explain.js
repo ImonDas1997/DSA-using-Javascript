@@ -1,1 +1,0 @@
-console.log(this);//we just get emplty object

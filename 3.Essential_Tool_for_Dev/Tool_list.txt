@@ -1,0 +1,9 @@
+// css grid generator--->   https://grid.layoutit.com/
+
+// get cs scan(for border and shades)-->    https://getcssscan.com/css-box-shadow-examples
+
+//javascript code visualizer -->  https://pythontutor.com/visualize.html#mode=edit
+
+//replit online ide -->https://replit.com/new/nodejs
+
+//best white board  --> https://excalidraw.com/

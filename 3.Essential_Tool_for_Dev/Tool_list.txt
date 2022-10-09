@@ -7,3 +7,17 @@
 //replit online ide -->https://replit.com/new/nodejs
 
 //best white board  --> https://excalidraw.com/
+
+//learn flexbox using game --->  https://flexboxfroggy.com/
+
+//css learning using game --->   https://flukeout.github.io/
+
+// material icon --> https://fonts.google.com/icons
+
+//hq images -->  https://www.pexels.com/
+
+// mixkit --->  https://www.pexels.com/
+
+// json placehlder(fake api  for testing ) --->  https://jsonplaceholder.typicode.com/
+
+// bets compressor -->  https://compressor.io/

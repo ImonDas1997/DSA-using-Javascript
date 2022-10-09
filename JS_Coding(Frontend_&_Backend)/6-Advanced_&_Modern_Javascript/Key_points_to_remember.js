@@ -12,9 +12,9 @@
 
 // //variable can point to information ( )
 
-// //i can manipulate information in an array ( non-primitive ) - mutable - ( clay )
+// //i can manipulate information in an array ( non-primitive ) - mutable - ( clay ) change kora jai manupulate kora jai
 
-// //i cannot maipulate information in an string ( primitive ) - immutable - ( rock )
+// //i cannot maipulate information in an string ( primitive ) - immutable - ( rock ) change kora jaina .no manupulation
 
 // //storing information ( big or small )
 

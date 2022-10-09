@@ -2,11 +2,11 @@
 // consoling a function ***************
 //-----------------------------------------------------------
 //look at the senario..i cant do this..i cant console a function who is having a console.log so i will not give ans..so alwatys i have to (return value from function and console log it) or just call the function simply.
-let x = function()//-----not correct----------
+let x1 = function()//-----not correct----------
 {
   console.log("I am another way of writing fun")
 }
-console.log(x);//you will not get ans because u r consoling  2 time from both the place.
+console.log(x1);//you will not get ans because u r consoling  2 time from both the place.
 
 
 //--------------------------------------------------------------

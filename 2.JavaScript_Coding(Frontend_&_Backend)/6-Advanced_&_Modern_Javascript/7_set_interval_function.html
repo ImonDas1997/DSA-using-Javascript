@@ -9,7 +9,7 @@
   <body></body>
 </html>
 <script>
-  // setTimeout-->allow you to execute a function after some point of time.
+  // setTimeout-->allow you to execute a function after some point of time again and again.
   //syntax
   //TNT
   //RDX
@@ -18,9 +18,9 @@
     console.log("hello");
   }
   sayHello();
-  setTimeout(sayHello, 3000); //we have to call the function which you want to set time and give time .very interesting tool.
+  setInterval(sayHello, 3000); //we have to call the function which you want to set time and give time .very interesting tool.
   //diffrent way-->
-  setTimeout(function () {
+  setInterval(function () {
     console.log("hello");
   }, 3000);
 

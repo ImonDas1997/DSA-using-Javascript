@@ -8,6 +8,8 @@
   </head>
   <body>
     <div id="timer"></div>
+    <div id="timer1"></div>
+
   </body>
 </html>
 <script>
@@ -24,4 +26,21 @@
     }, 1000); //1 min interval e function ta kl call korei jachhe
   }
   counter();
+
+
+  // reverse from 10 to 1------------------------------------------------------->
+  let h2 = document.getElementById("timer1");
+  function counterReverse() {
+    let i = 10;
+    //interval2 is just name karan
+    let interval2 = setInterval(function () {
+      if (i === 0) {
+        clearInterval(interval2);
+      }
+      h2.innerText = i;
+      i--;
+    }, 1000); //1 min interval e function ta kl call korei jachhe
+  }
+  counterReverse();
+
 </script>

@@ -1,27 +1,27 @@
-// css grid generator--->   https://grid.layoutit.com/
+ css grid generator--->   https://grid.layoutit.com/
 
-// get cs scan(for border and shades)-->    https://getcssscan.com/css-box-shadow-examples
+ get cs scan(for border and shades)-->    https://getcssscan.com/css-box-shadow-examples
 
-//javascript code visualizer -->  https://pythontutor.com/visualize.html#mode=edit
+javascript code visualizer -->  https://pythontutor.com/visualize.html#mode=edit
 
-//replit online ide -->https://replit.com/new/nodejs
+replit online ide -->https://replit.com/new/nodejs
 
-//best white board  --> https://excalidraw.com/
+best white board  --> https://excalidraw.com/
 
-//learn flexbox using game --->  https://flexboxfroggy.com/
+learn flexbox using game --->  https://flexboxfroggy.com/
 
-//css learning using game --->   https://flukeout.github.io/
+css learning using game --->   https://flukeout.github.io/
 
-// material icon --> https://fonts.google.com/icons
+ material icon --> https://fonts.google.com/icons
 
-//hq images -->  https://www.pexels.com/
+hq images -->  https://www.pexels.com/
 
-// mixkit --->  https://www.pexels.com/
+ mixkit --->  https://www.pexels.com/
 
-// json placehlder(fake api  for testing ) --->  https://jsonplaceholder.typicode.com/
+ json placehlder(fake api  for testing ) --->  https://jsonplaceholder.typicode.com/
 
-// bets compressor -->  https://compressor.io/
+ bets compressor -->  https://compressor.io/
 
-// flexbox learn/ flexboxzombie --->    https://mastery.games/flexboxzombies/
+ flexbox learn/ flexboxzombie --->    https://mastery.games/flexboxzombies/
 
-//for all type of gif file best icon loading---> https://giphy.com/
+for all type of gif file best icon loading---> https://giphy.com/

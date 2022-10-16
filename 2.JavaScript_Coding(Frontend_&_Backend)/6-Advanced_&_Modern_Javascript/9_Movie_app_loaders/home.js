@@ -78,3 +78,15 @@ function sortHL() {
   data = data.sort((a, b) => b.rating - a.rating);
   appendMovies(data);
 }
+
+//lets talk dependency in movie app.
+//i cannot append data unless i have movies data.
+//appendMovies() cannot work unless I have movies data. do we netlfix, hotstar data stored with us?
+//we will have to mimick that data is coming to us via server.
+//all we need to do is getMovies() execute it after some time.
+
+setTimeout(function () {
+  let data = movies;
+  console.log("data : ", data);
+}, 3000);
+letgetmeData=newPromise() // newlekhamaneiconstructior function...

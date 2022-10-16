@@ -85,8 +85,24 @@ function sortHL() {
 //we will have to mimick that data is coming to us via server.
 //all we need to do is getMovies() execute it after some time.
 
-setTimeout(function () {
-  let data = movies;
-  console.log("data : ", data);
-}, 3000);
-letgetmeData=newPromise() // newlekhamaneiconstructior function...
+//you have dependency, you use promise.
+let getmeData = new Promise(function (resolve, reject) {
+  //three states of promise.
+  //1. pending
+  //2. resolved
+  //3. rejected
+  // execute resolve
+
+  //our promise takes time?
+  //in our case, promise is we will give you movies data after 3 second
+  setTimeout(function () {
+    let data = movies;
+    console.log("data : ", data);
+  }, 3000);
+});
+
+//what do you pass to promise?
+//function
+
+//what do you pass to callback function?
+//resolve, reject

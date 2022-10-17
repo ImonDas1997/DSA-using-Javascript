@@ -1,0 +1,24 @@
+font--->Cascadia Code  (check setup process and change in seetings )
+auto close tag
+auto rename tag
+.code runner
+git history
+git lens
+importcost
+javascript(ES6)
+jupyter notebook renders
+live server
+live share
+prettier
+quokka.js
+rainbow brackets
+settings sync
+microsooft edge tool for vs code
+
+
+
+Themes------>
+cobult2
+community material theme
+material theme iconone dark procesmaterial theme
+shades of purple

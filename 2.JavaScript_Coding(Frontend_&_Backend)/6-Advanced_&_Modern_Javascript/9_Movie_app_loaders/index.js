@@ -1,13 +1,33 @@
 const movies = [
   {
-    name: "RRR",
+    name: "Babli Bouncer",
     rating: 8,
-    img: "https://media2.bollywoodhungama.in/wp-content/uploads/2022/04/RRR-8-322x402.jpg",
+    img: "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7383/1357383-v-6c8546f2e7bd",
   },
   {
-    name: "MSD",
+    name: "Beyhad",
     rating: 8.5,
-    img: "https://i.pinimg.com/originals/e7/06/b9/e706b9c1e0531b63020524d492545388.jpg",
+    img: "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1299/1351299-v-8d0bbbc730da",
+  },
+  {
+    name: "Beyhad",
+    rating: 8.5,
+    img: "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/6536/846536-v",
+  },
+  {
+    name: "Baaghi3",
+    rating: 8.5,
+    img: "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_1_5x/sources/r1/cms/prod/6828/556828-v",
+  },
+  {
+    name: "Mission mangal",
+    rating: 8.5,
+    img: "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/1529/571529-v",
+  },
+  {
+    name: "Tanhaji",
+    rating: 8.5,
+    img: "https://img1.hotstarext.com/image/upload/f_auto,t_web_vl_3x/sources/r1/cms/prod/7676/647676-v",
   },
 ];
 
@@ -19,9 +39,7 @@ function carousel() {
   //how can i access third image? images [2]
   //how long until i append second image? →> 3 seconds
   let images = [
-    "https://cdn.wallpapersafari.com/63/91/EGjUcK.jpg",
-    "https://images.unsplash.com/photo-1645788898721-ab7caf5e112a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    "https://images.unsplash.com/photo-1659388825256-d33a36d4c281?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    'https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/9119/1329119-h-ef64fcf3d1f9', 'https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/7976/1317976-h-e672d8d911fe', 'https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/3064/1323064-h-dcaae091e676'
   ];
 
   let imgElement = document.createElement("img");
@@ -51,7 +69,11 @@ function carousel() {
 carousel();
 
 function appendMovies(data) {
+  let loader_div = document.getElementById('loader_div'); 
+  loader_div.style.display = 'none';
+  
   let data_div = document.getElementById("movies");
+  data_div.innerHTML=null;
   data.forEach(function (el) {
     let div = document.createElement("div");
     let p_name = document.createElement("p");
@@ -97,10 +119,27 @@ let getmeData = new Promise(function (resolve, reject) {
   //in our case, promise is we will give you movies data after 3 second
   setTimeout(function () {
     let data = movies;
-    console.log("data : ", data);
-  }, 3000);
+    if (data != null) {
+      resolve(data); // return "data"
+    } else {
+      reject("ERR : Server could not get movies data");
+    }
+  }, 7000);
 });
+console.log('getmeData : ', getmeData);
 
+
+//getmedata is an object created by Promise CF. 
+//.then eats what? 
+//then->resolve 
+//catch -> ->errors
+getmeData .then(function (success) {
+   appendMovies(success);
+  
+  })  
+  .catch(function (error) { 
+    console.log('error:', error); 
+  });
 //what do you pass to promise?
 //function
 

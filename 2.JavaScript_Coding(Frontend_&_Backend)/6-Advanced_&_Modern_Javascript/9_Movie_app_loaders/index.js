@@ -39,7 +39,9 @@ function carousel() {
   //how can i access third image? images [2]
   //how long until i append second image? →> 3 seconds
   let images = [
-    'https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/9119/1329119-h-ef64fcf3d1f9', 'https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/7976/1317976-h-e672d8d911fe', 'https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/3064/1323064-h-dcaae091e676'
+    "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/9119/1329119-h-ef64fcf3d1f9",
+    "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/7976/1317976-h-e672d8d911fe",
+    "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/3064/1323064-h-dcaae091e676",
   ];
 
   let imgElement = document.createElement("img");
@@ -69,11 +71,11 @@ function carousel() {
 carousel();
 
 function appendMovies(data) {
-  let loader_div = document.getElementById('loader_div'); 
-  loader_div.style.display = 'none';
-  
+  let loader_div = document.getElementById("loader_div");
+  loader_div.style.display = "none";
+
   let data_div = document.getElementById("movies");
-  data_div.innerHTML=null;
+  data_div.innerHTML = null;
   data.forEach(function (el) {
     let div = document.createElement("div");
     let p_name = document.createElement("p");
@@ -87,7 +89,7 @@ function appendMovies(data) {
     data_div.append(div);
   });
 }
-appendMovies(movies);
+
 
 function sortLH() {
   let data = movies;
@@ -122,23 +124,22 @@ let getmeData = new Promise(function (resolve, reject) {
     if (data != null) {
       resolve(data); // return "data"
     } else {
-      reject("ERR : Server could not get movies data");//just some error msgg
+      reject("ERR : Server could not get movies data"); //just some error msgg
     }
-  }, 7000);
+  }, 3000);
 });
-console.log('getmeData : ', getmeData);
+console.log("getmeData : ", getmeData);
 
-
-//getmedata is an object created by Promise CF. 
-//.then eats what? 
-//then->resolve 
+//getmedata is an object created by Promise CF.
+//.then eats what?
+//then->resolve
 //catch -> ->errors
-getmeData .then(function (success) {
-   appendMovies(success);
-  
-  })  
-  .catch(function (error) { 
-    console.log('error:', error); 
+getmeData
+  .then(function (success) {
+    appendMovies(success);
+  })
+  .catch(function (error) {
+    console.log("error:", error);
   });
 //what do you pass to promise?
 //function

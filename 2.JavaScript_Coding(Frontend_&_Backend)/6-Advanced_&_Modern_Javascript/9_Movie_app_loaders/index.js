@@ -122,7 +122,7 @@ let getmeData = new Promise(function (resolve, reject) {
     if (data != null) {
       resolve(data); // return "data"
     } else {
-      reject("ERR : Server could not get movies data");
+      reject("ERR : Server could not get movies data");//just some error msgg
     }
   }, 7000);
 });

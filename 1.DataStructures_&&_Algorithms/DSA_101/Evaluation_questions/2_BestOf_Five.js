@@ -35,53 +35,51 @@
 
 // The student scored the highest marks in Maths. So the output isMaths
 
+marks = [92, 67, 88, 25, 30, 45];
+subjects = ["Maths", "Chemistry", "History", "English", "Biology", "Physics"];
 
-  marks=[92,67,88,25,30,45]
-  subjects=["Maths","Chemistry","History","English","Biology","Physics"]
-
-  function bestOfFive  () {
-    // Part 1 : Write Code Here
-    let sum = 0;
-    let min = Infinity;
-    for (i = 0; i <marks.length; i++) {
-      sum += this.marks[i];
-      if (this.marks[i] < min) {
-        min = this.marks[i];
-      }
+function bestOfFive() {
+  // Part 1 : Write Code Here
+  let sum = 0;
+  let min = Infinity;
+  for (i = 0; i < marks.length; i++) {
+    sum += this.marks[i];
+    if (this.marks[i] < min) {
+      min = this.marks[i];
     }
-
-    console.log(sum - min);
-
-    // Console.log the output : total of best of five
   }
 
-   function badSubject() {
-    // Part 2 : Write Code Here
+  console.log(sum - min);
 
-    let sum1 = 0;
-    let min = Infinity;
-    for (i = 0; i < marks.length; i++) {
-      if (marks[i] < min) {
-        min = marks[i];
-        sum1 = subjects[i];
-      }
+  // Console.log the output : total of best of five
+}
+
+function badSubject() {
+  // Part 2 : Write Code Here
+
+  let sum1 = 0;
+  let min = Infinity;
+  for (i = 0; i < marks.length; i++) {
+    if (marks[i] < min) {
+      min = marks[i];
+      sum1 = subjects[i];
     }
-    console.log(sum1);
-    // Console.log the result : subject name with lowest marks
+  }
+  console.log(sum1);
+  // Console.log the result : subject name with lowest marks
+}
+
+function bestSubject() {
+  // Part 3 : Write Code Here
+  let sum1 = "";
+  let max = -Infinity;
+  for (i = 0; i < marks.length; i++) {
+    if (marks[i] > max) {
+      max = marks[i];
+      sum1 = subjects[i];
+    }
   }
 
-   function bestSubject() {
-    // Part 3 : Write Code Here
-    let sum1 = "";
-    let max = -Infinity;
-    for (i = 0; i < marks.length; i++) {
-      if (marks[i] > max) {
-        max = marks[i];
-        sum1 = subjects[i];
-      }
-    }
-
-    console.log(sum1);
-    // Console.log the output : subject name with highest marks
-  }
-
+  console.log(sum1);
+  // Console.log the output : subject name with highest marks
+}

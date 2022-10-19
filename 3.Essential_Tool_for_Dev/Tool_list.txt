@@ -30,3 +30,4 @@ for all type of gif file best icon loading---> https://giphy.com/
 css loader -->https://dev.to/afif/another-100-css-loaders-for-your-next-project-352l
 
 get api data---> https://reqres.in/
+good ide-->https://replit.com/~

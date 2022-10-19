@@ -15,6 +15,7 @@ rainbow brackets
 settings sync
 microsooft edge tool for vs code
 Eslint
+tabnine
 
 
 

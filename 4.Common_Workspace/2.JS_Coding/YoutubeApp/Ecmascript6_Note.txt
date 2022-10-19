@@ -1,0 +1,406 @@
+ES^-->improvement of JavaScript
+
+What is ES6? ES6 stands for ECMAScript 6. ECMAScript was created to standardize JavaScript, and ES6 is the 6th version of ECMAScript, it was published in 2015, and is also known as ECMAScript 2015.
+
+ECMAScript 2015 was the second major revision to JavaScript.
+
+ECMAScript 2015 is also known as ES6 and ECMAScript 6.
+
+ES6 allows you to write the code in such a way that makes your code more modern and readable. By using ES6 features, we write less and do more, so the term 'Write less, do more' suits ES6.
+
+keywards-->
+
+The let keyword allows you to declare a variable with block scope.
+
+The const keyword allows you to declare a constant (a JavaScript variable with a constant value). Constants are similar to let variables, except that the value cannot be changed.
+-------------------------------------------------------------
+Arrow Functions      ()=> // this is the syntax of arrow function
+
+
+function double(x)
+{ 
+return x*2
+}
+is the same as---> this is arrow function
+
+double = (x) => 
+{
+return x*2
+} 
+---------------------------------------------------------
+
+//this is how normal function write
+function test()
+{ 
+console.log('Hello world')
+} 
+//normal function inside a variable
+let test = function () { 
+
+console.log('Hello world') 
+} 
+//***This is arrow function//just no more use function keyword***********
+let test = () =>{ 
+console.log('Hello world')
+}
+// using array function in callback function ** very imp
+
+let arr = [1, 2, 3, 4]
+
+arr.forEach((el) => { 
+console.log('el:', el) 
+})
+
+-------------------------------------------------
+function or method write inside the object syntax-->
+
+var myobj = 
+{ 
+i : 10,
+b : () => console.log(this.i, this), //arrow function 
+c : function() { console.log(this.i, this); } //Normal function
+}
+
+myobj.b(); // prints undefined, Window {...} (or the global object) 
+myobj.c(); // prints 10, Object {...}
+
+
+-------------------------------------------------------------
+--------------------------------------------------
+var elements = [
+    'Hydrogen',
+    'Helium',
+    'Lithium',
+    'Beryllium'
+  ];
+  
+  var a,b,c,d,e,f,g;
+
+  // This statement returns the array: [8, 6, 7, 9]
+  a = elements.map(function(element) {
+    return element.length;
+  });
+  
+  // The regular function above can be written as the arrow function below
+  b = elements.map((element) => {
+    return element.length;
+  }); // [8, 6, 7, 9]
+  
+  // When there is only one parameter, we can remove the surrounding parentheses
+  c = elements.map(element => {
+    return element.length;
+  }); // [8, 6, 7, 9]
+  
+  // When the only statement in an arrow function is `return`, we can remove `return` and remove
+  // the surrounding curly brackets
+  d = elements.map(element => element.length); // [8, 6, 7, 9]
+------------------------------------------------------------------------------
+
+  Arrow functions do not have their own "this" keyword property.
+  
+  var obj = { // does not create a new scope
+    i: 10,
+    b: () => console.log(this.i, this),
+    c: function() {
+      console.log(this.i, this);
+    }
+  }
+  
+  obj.b(); // prints undefined, Window {...} (or the global object)
+  obj.c(); // prints 10, Object {...}
+
+
+function (argument) {
+    ...
+    do something
+    ...
+} <--this is ES5 Syntax
+---------------------------------
+
+(args) => {
+    do something
+}  <--this is ES6 Syntax
+
+(arg) => {} 
+//the parantheses () are sometimes optionsal depending on no of arguments you have
+//The curly brackets {} are also sometimes optional 
+
+double = (x) => {
+    return x*2
+    }
+//or
+double = x => x*2
+//or
+double
+//is the same as
+
+function double(x){
+    return x*2
+}
+------------------------------------------
+for/of loops--->
+
+The JavaScript for/of statement loops through the values of an iterable objects. 
+for/of lets you loop over data structures that are iterable such as Arrays, Strings.
+
+let arr = [1, 2, 3, 4] 
+for (let x of arr) { 
+console.log('x:', x)//print all array//same applicable for string
+}
+
+
+-------------------------------------------------------------------------------
+
+for of loop
+The JavaScript for/of statement loops through the values of iterable objects.
+for/of lets you loop over data structures that are iterable such as Arrays, Strings.
+
+for (variable of iterable) {
+  // code block to be executed
+}
+
+variable - For every iteration, the value of the next property is assigned to the variable. Variable can be declared with const, let, or var.
+
+iterable - An object that has iterable properties.
+
+Looping over an Array
+
+Example
+
+var cars = ["BMW", "Volvo", "Mini"];
+var x;
+
+for (x of cars) {
+console.log(x)
+
+}
+--------------------------------------------------
+Destructuring-->imp concept
+
+Destructuring allows us to extract multiple properties from an object
+
+const user = {  
+name : 'raj',
+age : 24, 
+city : 'Pune' 
+}
+//if we want to access some data  from this property conventional syntax is given bwlow which is . notation
+//let name = user.name
+//let age = user.age 
+but  new method is-->
+//destructuring 
+let { name, city} = user
+console.log('name : ', name, city)
+
+---------------------------------------------------------------------------
+Object & Array destructuring
+We know that we can add a single property,extract a property add multiple properties to an object.
+
+var person = {}
+person.name = 'karthik';
+person.id = 'sm_090';
+person.location = 'India';
+// creating property one by one
+
+const name = person.name
+const id = person.id
+// extracting property one by one
+
+// creating multiple properties together by using object literal notation
+var person = {
+    name:"karthik",
+    id:"sm_090",
+    location:"India"
+}
+
+var name = person.name
+var id = person.id
+var location = person.location
+Destructuring allows us to extract multiple properties from an object
+
+
+const { name, id, location } = person;
+// The code can now be written in a better way now
+You can also destructure from return values from other functions.
+If you have an api call and it returns a large object.
+
+function getData(){
+    let count = 5
+    let url = '127.0.0.1:8000'
+    let obj = {
+        count,
+        url,
+    }
+    return obj
+}
+
+var { count, url } = getData()
+
+
+
+------------------------------------------------------------------------------------
+
+
+Array Destructuring
+We can do the same with arrays as well
+// array destructuring
+// standard way 
+const arr = ['MASAI','INDIA','EDTECH']
+var name = arr[0]
+var location = arr[1]
+var desc = arr[2]
+
+// es6
+var [name,location,desc] = arr
+console.log(name,location,desc)
+
+// using destructuring in split
+name = 'albert sebastian'
+const [fname, lname] = name.split(' ')
+console.log(fname, lname)
+
+// use const
+var person = {
+    f:'swanand',
+    l:'kadam',
+    i:'swanand7'
+}
+
+var {f:fname,l:lname,i:id} = person
+
+-----------------------------------------------------------------------------------
+Renaming field names: ---->****
+// use const
+var person = {
+    f:'swanand',
+    l:'kadam',
+    i:'swanand7'
+}
+
+var {f:fname,l:lname,i:id} = person
+
+-----------------------------------------------------------------------------------
+fetching data advantage-->*****
+
+
+fetch('https://reqres.in/api/users/2') 
+.then((res) => { 
+
+return res.json().then((res) => { 
+
+let data = res.data 
+
+// let name = data.first_name -->conventional sysntax 
+// let email = data.email 
+
+let { first_name, email} = data --->latest syntax for getting data
+
+console.log('data : ', data)
+
+})
+})
+
+-----------------------------------------------------------------------------------
+We can use object destructuring:--->
+
+//conventional exmple --->
+
+const user = {
+name : 'raj',
+age : 24,
+city : 'Pune' 
+}
+function printUser(u) 
+{ 
+console.log(u.name, u.age, u.city) 
+printUser(user)
+
+---> new way of writting --->destructuring
+const user = {
+name : 'raj',
+age : 24,
+city : 'Pune' 
+}
+
+function printUser((name, age, city}) // all val;ue are we are catching here in parameter section 
+{
+console.log {name,age, city)
+printUser(user)
+------------------------------------------------------------------------------------
+
+Spread--->(mostly we using while merging // array and array merging and  also object and object merging)
+
+
+if i want to introducce some array value from another array normally we use array. ppush but herewe will use some other shortcut--->
+
+
+
+just use ...   three dots...below exmple
+
+let colors1 = ['red', 'yellow', 'blue'] // this is using array
+let colors2 = [...colors1, 'violet', 'orange', 'green'] 
+console.log('colors2 : ', colors2)
+//same thing you can use in object's also ---> 
+
+
+const user1 = { 
+name : 'swanand'
+}
+const city1 = { 
+city : 'Pune' 
+} 
+const details = {...user1, ...cityl}  // just use  three dots  ...
+console.log('details : ', details) // you are geeting both objects data here ... very simple and clean
+
+
+
+function sum(x, y, z) {
+  return x + y + z; 
+}
+// Pass each elem of array as argument
+sum(...[1,2,3]) == 6
+
+// x = 1
+// y = 2
+// z = 3
+In the example below the var abc and contains 3 values each. The spread operator basically lays out the entire array into seperate elements. alpha contains 6 elements.
+
+var abc = ['a', 'b', 'c'];
+var def = ['d', 'e', 'f'];
+var alpha = [ ...abc, ...def ];
+console.log(alpha)// alpha == ['a', 'b', 'c', 'd', 'e', 'f'];
+
+------------------------------------------------------------------------------------
+
+Rest operator ---> full object acces and print  very easily.. rest means rest of  the parameter you can get at a time means all and get aas a object
+
+const user = { 
+name : 'swanand', 
+city : 'Pune', 
+age : 25, 
+role : 'developer' 
+}
+
+
+const {name, ...x }= user  // this is just the syntax insatade of x you can write anything no peoblem 
+console.log('x : ', x)
+
+
+//directly u can pass array frrm argument it take as array using the  three dots
+
+
+function printArray (...a) //using these three dot directly taking array instade of a it can be anything
+{ 
+let sum = 0
+for(let num of a) 
+{ 
+sum+=num 
+console.log('sum : ', sum)
+}
+} 
+ 
+printArray (10,20,30) I//directly passing array
+
+
+------------------------------------------------------------------------------------
+

@@ -1,0 +1,14 @@
+[git clone] and paste address--> please ignore all -->[]
+[git status]-->inorder to see all files which have newely added
+[git add imon.txt]-->imon.txt is new file--> adding new file
+[git status]-->now file will be in green and you can see it got staged
+[git commit -m "any description"]-->commiting changes
+[git push origin master]--> master is branch name--> you can see it in left buttm corner in vs code and also in repository
+
+
+
+----------------------------
+some time you might have git push issue in that case
+[git pull]
+try pushing your changes using git push origin master..
+use visual studio code while pushing.normal terminal doesnot works.....yoooooooo

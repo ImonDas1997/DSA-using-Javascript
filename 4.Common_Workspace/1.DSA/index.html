@@ -4,9 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Closures</title>
 </head>
 <body>
+<script>
+    function OuterFunction() { 
+var outerVariable = 100; 
+function InnerFunction() {
+ alert(outerVariable); 
+} 
+return InnerFunction; 
+} 
+var innerFunc = OuterFunction(); 
+innerFunc(); // 100
+
+//In the above example, return InnerFunction; returns InnerFunction from OuterFunction when you call OuterFunction(). A variable innerFunc reference the InnerFunction() only, not the OuterFunction(). So now, when you call innerFunc(), it can still access outerVariable which is declared in OuterFunction(). This is called Closure.
+
+</script>
     
 </body>
 </html> 
+
+A closure gives you access to an outer function's scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+A closure is a function having access to the parent scope. It preserves the data from the outside.
+
+For every closure we have three scopes : 
+● Local Scope (Own scope) 
+● Outer Functions Scope
+● Global Scope 

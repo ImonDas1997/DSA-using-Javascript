@@ -27,6 +27,7 @@ const searchVideos = async () => {
 const containerBase = document.getElementById("container");
 
 const appendVideos = (data) => {
+  containerBase.innerHTML = null;
   data.forEach(({snippet}) => {
     let div = document.createElement('div');
     let p_title = document.createElement("p");

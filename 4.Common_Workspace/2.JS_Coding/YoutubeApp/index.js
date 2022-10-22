@@ -7,11 +7,10 @@ const searchVideos = async () => {
   //is async await way of making api call?
   //is async await a way of handling a promise?
   try{
-      const api_key = 'AIzaSyBgqLwWLYaI4J8v8snJoI4g0urTML7jWTU';
+      const api_key = "AIzaSyDgdFZNY17Jup6fZqrVtBNDoLNXYgsR5mk";
 
   let search_term = document.getElementById('search_term').value;
-  let response = await fetch(
-    `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=${search_term}&key=${api_key}&videoEmbeddable=true`);
+  let response = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=${search_term}&key=${api_key}&videoEmbeddable=true`);
   
   let data =await response.json(); //here .json means not converting just collecting data //bad syntax
   let actual_data = data.items; 
@@ -24,6 +23,7 @@ const searchVideos = async () => {
 
   }
 };
+searchVideos();
 
 const container=document.getElementById('container');
 

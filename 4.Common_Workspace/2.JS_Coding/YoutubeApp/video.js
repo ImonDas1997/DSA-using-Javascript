@@ -5,7 +5,7 @@ const showClickedVideo = () => {
 
   //Embedding a video using iframe HTML element 
   let iframe = document.createElement('iframe') ;
-  iframe.src = `https://www.youtube.com/embed/$(data.videoId)?autoplay=1&mute=1`;
+  iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`;
 
   iframe.width = "100%";
   iframe.height = "100%";

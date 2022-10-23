@@ -18,8 +18,7 @@ const searchVideos = async () => {
     let actual_data = data.items;
     console.log("actual_data:", actual_data);
     appendVideos(actual_data);
-  } catch (err) 
-  {
+  } catch (err) {
     console.log("err:", err);
   }
 };
@@ -28,38 +27,33 @@ const containerBase = document.getElementById("container");
 
 const appendVideos = (data) => {
   containerBase.innerHTML = null;
-  data.forEach(({snippet}) => {
-    let div = document.createElement('div');
+  data.forEach(({ snippet, id: { videoId } }) => {
+    //here you are passing videoId also
+    let div = document.createElement("div");
     let p_title = document.createElement("p");
     p_title.innerText = snippet.title;
-    let p_channel_name = document.createElement('p');
+    let p_channel_name = document.createElement("p");
     p_channel_name.innerText = snippet.channelTitle;
 
-    let thumbnail = document.createElement('img');
+    let thumbnail = document.createElement("img");
     thumbnail.src = snippet.thumbnails.high.url;
     div.append(thumbnail, p_title, p_channel_name);
-
-    //add  eventhandlaer in the div now .. 
-      div.onclick = () => {
-        console.log(snippet);
-        // let data = {
-        //   snippet,
-        //   videoId,
+    // youtyube api 2--->
+    //make thumbnil  clickable..
+    //add  eventhandlaer in the div now ......
+    //add event handler to this div
+    //transfer data fro, index.html to video.html
+    //data= the video that user clicked (snippet, videoId)
+    div.onclick = () => {
+      // console.log(snippet, videoId); //video id is unique so u are pasing it
+      let data = {
+        snippet,
+        videoId,
       };
+      data = JSON.stringify(data);
+      localStorage.setItem("clicked_video", data);
+      window.location.href = "video.html";
+    };
     containerBase.append(div);
   });
 };
-// youtyube api 2--->
-//make thumbnil  clickable..
-//     //add event handler to this div
-//     //transfer data fro, index.html to video.html
-//     //data= the video that user clicked (snippet, videoId)
-
-  
-//       data = JSON.stringify (data)
-//       localStorage.setItem('clicked_video', data);
-//       window.location.href='/video.html';
-//     };
-//     container.append(div);
-//   });
-// };

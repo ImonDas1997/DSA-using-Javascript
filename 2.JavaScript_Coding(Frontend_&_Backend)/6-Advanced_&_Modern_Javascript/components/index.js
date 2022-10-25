@@ -1,18 +1,32 @@
 //1. function defination for searchVideos ()
 //2.fetch call
 //async arrow function in ES6
+import { navbar } from './components/navbar.js'; 
+let navbar_div = document.getElementById('navbar'); navbar_div.innerHTML=navbar();
+
+let search_btn=document.getElementById('search_button');
+search_btn.onclick=()=> {
+
+}
 const searchVideos = async () => {
   //.then, .catch
   //async await
   //is async await way of making api call?
   //is async await a way of handling a promise?
+ 
+ 
+ 
+ let navbar_div = document.getElementById('navbar') 
+ navbar_div.innerHTML=navbar();
+
+
   try {
     const api_key = "AIzaSyDgdFZNY17Jup6fZqrVtBNDoLNXYgsR5mk";
 
     let search_term = document.getElementById("search_term").value;
     let response = await fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${search_term}&key=${api_key}`
-    );
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=25&q=${search_term}&key=${api_key}`);
+  
 
     let data = await response.json(); //here .json means not converting just collecting data //bad syntax
     let actual_data = data.items;

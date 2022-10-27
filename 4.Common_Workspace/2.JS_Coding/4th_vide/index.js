@@ -1,13 +1,13 @@
 //1. function defination for searchVideos ()
 //2.fetch call
 //async arrow function in ES6
-import { navbar } from './components/navbar.js'; 
-let navbar_div = document.getElementById('navbar'); navbar_div.innerHTML=navbar();
+// import { navbar } from './components/navbar.js'; 
+// let navbar_div = document.getElementById('navbar'); navbar_div.innerHTML=navbar();
 
-let search_btn=document.getElementById('search_button');
-search_btn.onclick=()=> {
+// let search_btn=document.getElementById('search_button');
+// search_btn.onclick=()=> {
 
-}
+// }
 const searchVideos = async () => {
   //.then, .catch
   //async await
@@ -16,8 +16,8 @@ const searchVideos = async () => {
  
  
  
- let navbar_div = document.getElementById('navbar') 
- navbar_div.innerHTML=navbar();
+//  let navbar_div = document.getElementById('navbar') 
+//  navbar_div.innerHTML=navbar();
 
 
   try {

@@ -49,8 +49,8 @@ class User {
         body: JSON.stringify(this),
         headers: {
           "Content-Type": "application/json",
-          "Access-Control-Allow-Origin": "*",
         },
+        mode: "no-cors",
       });
       const data = await response.json();
       console.log("data : ", data);
@@ -73,8 +73,8 @@ class User {
       body: JSON.stringify(login_data),
       headers: {
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*",
       },
+      mode: "no-cors",
     });
     const data = await response.json();
     return data;
@@ -111,7 +111,9 @@ const getProfile = async () => {
     headers: {
       Authorization: `bearer $(token)`,
       "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
     },
+    mode: "no-cors",
   });
   let data = await response.json();
   console.log("data:", data);

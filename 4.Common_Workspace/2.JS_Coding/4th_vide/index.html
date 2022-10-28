@@ -17,14 +17,29 @@
     #container img {
       width: 100%;
     }
+
+.gridStyle {  display: grid;
+  grid-template-columns: 0.4fr 0.4fr 3.9fr 0.5fr 0.4fr;
+  gap: 0px 88px;
+  grid-auto-flow: row;
+}
+
+
   </style>
   <body>
     <div id="navbar">
- <img style="width:120px;padding-right:10px; margin-top:-30px;  " src="https://www.cuomomarine.it/wp-content/uploads/iconham.png" alt=""/>
- <img  style="width:120px;padding-right:150px;margin-bottom:40px;"  src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png" alt=""/>
+      <div class="gridStyle">
+        <div> <img style="width:118px;padding-right:10px; margin-top:-36px;  " src="https://www.cuomomarine.it/wp-content/uploads/iconham.png" alt=""/></div>
+        <div><img  style="width:120px;padding-right:150px;margin-top:12px;"  src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png" alt=""/></div>
+        <div><input  type="text"style="width:85%; height:25px;  margin-top:10px;"  id="search_term" />
+    <button style=" height:30px; " onclick="searchVideos()">Search</button></div>
+        <div></div>
+        <div></div>
+      </div>
 
-    <input  type="text"style="width:40%; height:25px;  margin-bottom:50px;"  id="search_term" />
-    <button style=" height:30px; " onclick="searchVideos()">Search</button>
+ 
+
+    
    
     <div id="container"></div>
   </body>

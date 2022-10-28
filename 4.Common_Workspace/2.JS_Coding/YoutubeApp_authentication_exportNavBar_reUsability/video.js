@@ -1,4 +1,5 @@
 //what is the goal here? //plays the video.
+
 const showClickedVideo = () => {
   let data = localStorage.getItem("clicked_video");
   let {videoId} = JSON.parse(data);

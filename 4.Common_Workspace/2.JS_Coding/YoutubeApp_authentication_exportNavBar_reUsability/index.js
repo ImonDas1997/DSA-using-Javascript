@@ -7,7 +7,7 @@ navbar_div.innerHTML = navbar();
 
 let search_btn = document.getElementById("search_button");
 search_btn.onclick = () => {
-searchVideos();
+  searchVideos();
 };
 
 const searchVideos = async () => {

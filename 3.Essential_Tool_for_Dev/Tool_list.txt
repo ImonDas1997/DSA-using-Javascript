@@ -31,3 +31,5 @@ css loader -->https://dev.to/afif/another-100-css-loaders-for-your-next-project-
 
 get api data---> https://reqres.in/
 good ide-->https://replit.com/~
+
+omdb api ---->https://www.omdbapi.com/

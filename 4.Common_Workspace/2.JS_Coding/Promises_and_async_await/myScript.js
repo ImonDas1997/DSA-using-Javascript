@@ -1,3 +1,3 @@
 function hellow() {
-  console.log("i am from my script");
+  console.log("i am from myscript");
 }

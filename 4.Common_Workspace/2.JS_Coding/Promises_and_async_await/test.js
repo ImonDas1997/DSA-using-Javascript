@@ -12,10 +12,32 @@
 //  Basically, we have to WAIT.
 
 function append(s) {
-  let script = document.createElement("script");
-  script.src = s;
-  document.head.append(script);
-  console.log("document : ", document);
+  return new Promise(function (resolve, reject) {
+    let script = document.createElement("script");
+    script.src = s;
+    document.head.append(script);
 
+    script.onload = function () {
+      resolve("Script loading done");
+      hellow(); //dependent on script to get completely loaded
+    };
+    script.onerror = function () {
+      reject("Not loaded");
+    };
+  });
 }
 append("/myScript.js");
+
+// solution is -->
+
+// var promise = new Promise()
+
+// Resolve : When promise is fullfilled
+// Reject : When promise is rejected
+//exmple------------>
+
+// var myPromise = new Promise(function (resolve, reject) {
+//   //resolve('gift a laptop')//this is for success
+//   reject("Goodbye!");// this is for rejection
+// });
+// console.log("my Promise : ", myPromise);

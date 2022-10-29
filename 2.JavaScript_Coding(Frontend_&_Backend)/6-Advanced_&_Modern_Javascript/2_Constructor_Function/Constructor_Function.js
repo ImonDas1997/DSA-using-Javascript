@@ -1,9 +1,14 @@
-console.log(this);//we just get emplty object
+console.log(this); //we just get emplty object
+//work of constructor function is just create object and pass it to someone .
 
 // 1.'this' will always point to an object.
 //  2. It points to the owner object. either a global object or a custom object that you created.
 //   3. It can point to different owner objects through few methods that we are going to learn. ( call, apply, bind)
-
+//cconstructor function always creates objects
+//this & new keywords.
+//CAB
+//you can rent out a method of one object onto another
+//changing the value of this.
 
 //constructor
 
@@ -17,9 +22,9 @@ console.log(this);//we just get emplty object
 
 //obj2
 //obj3
-//call, apply, bind
+//call, apply, bind-----*****
 
-//constructor    
+//constructor
 //-er    means--> he /she does something like tiktoker
 //constructing something
 //constructing objects
@@ -66,7 +71,6 @@ console.log(this);//we just get emplty object
 // let p2 = new nikeProduct('football', 3000);
 // console.log('p2:', p2);
 
-
 //return value - undefined
 
 //new -> returning the value ( object )****
@@ -76,63 +80,57 @@ console.log(this);//we just get emplty object
 
 //its related to functions.ncg
 let bedroom = {
-    name: 'bedroom',
-    purpose: 'sleep',
-  };
-  
-  let lr = {
-    name: 'lr',
-    purpose: 'tv',
-  };
-  
-  let kitchen = { 
-    name: 'kitchen',
-    purpose: 'cook',
-  
-    cookFood(food, drink) {
-      console.log(`Serving ${food} & ${drink} in ${this.name}  `);
-    },
-  };
-  
-  kitchen.cookFood.call(lr, 'maggie', 'coke');
-  
-  // let reguser = {
-  
-  //     role: 'user'
-  // }
-  
-  // let admin = {
-  
-  //     role: 'admin',
-  
-  //     onedaySpotifyPass() {
-  
-  //     }
-  // }
-  
-  // admin.onedaySpotifyPass.call(reguser)
-  
-  // let name = 'pablo'
-  
-  // let msg = ` ${name} says hi`
-  
-  //this -> kitchen
-  
-  //this -> bedroom
-  
-  //make 'this' point to a different object
-  
-  //.call
-  
-  //
-  
-  // kitchen.cookFood('maggie');
-  
-  //allows us to change the value of this
-  
-  
-  //cconstructor function always creates objects
-  //this & new keywords.
-  //CAB
-  //you can rent out a method of one object onto another
-  //changing the value of this. 
+  name: "bedroom",
+  purpose: "sleep",
+};
+
+let lr = {
+  name: "lr",
+  purpose: "tv",
+};
+
+let kitchen = {
+  name: "kitchen",
+  purpose: "cook",
+
+  cookFood(food, drink) {
+    console.log(`Serving ${food} & ${drink} in ${this.name}  `);
+  },
+};
+//call allows us to change the value of this
+
+kitchen.cookFood.call(bedroom, "maggie", "coke");
+
+// let reguser = {
+
+//     role: 'user'
+// }
+
+// let admin = {
+
+//     role: 'admin',
+
+//     onedaySpotifyPass() {
+
+//     }
+// }
+
+// admin.onedaySpotifyPass.call(reguser)
+
+// let name = 'pablo'
+
+// let msg = ` ${name} says hi`
+
+//this -> kitchen
+
+//this -> bedroom
+
+//make 'this' point to a different object
+
+//.call
+
+//
+
+// kitchen.cookFood('maggie');
+
+//allows us to change the value of this

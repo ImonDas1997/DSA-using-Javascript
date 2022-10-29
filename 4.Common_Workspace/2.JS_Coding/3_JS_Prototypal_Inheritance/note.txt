@@ -1,0 +1,32 @@
+The architecture of Js is also based upon inheritance.
+
+Inheritance?
+A human gets access to properties and methods (characteristics) of other human.
+In Js, this applies to objects.
+
+
+
+built in methods are available in array stored in  prototypes...it shores all values.every array has access to tyhis prototype.
+
+Everything in Js is an Object.
+best data structures is wo who can store Everything.inside the aobject we can store everything.
+for exmple-->
+
+// let insta_post = {
+
+//     likes: 24,
+//     url: 'https://ig.xyz',
+//     comments: [{
+//         user: 'shaik',
+//         comment:'xyz'
+//     }] ,
+//     hashtags: ['cute', 'nature'],
+
+// }
+
+we call object got of javascript because it is the besy data sturucture.
+
+
+We can use Js inheritance in two ways : 
+1. Constructor Functions 
+2. Object.create() method

@@ -1,6 +1,10 @@
 console.log(this); //we just get emplty object
 //work of constructor function is just create object and pass it to someone .
 
+
+
+//this will create new object and when u call it please use 'new' keyword--> 'this ' and   'new  is ram sita jodi'
+
 // 1.'this' will always point to an object.
 //  2. It points to the owner object. either a global object or a custom object that you created.
 //   3. It can point to different owner objects through few methods that we are going to learn. ( call, apply, bind)

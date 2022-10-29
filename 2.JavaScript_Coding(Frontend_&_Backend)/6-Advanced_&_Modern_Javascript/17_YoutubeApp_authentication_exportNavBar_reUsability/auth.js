@@ -50,7 +50,7 @@ class User {
         headers: {
           "Content-Type": "application/json",
         },
-        // mode: "no-cors",
+        mode: "no-cors",
       });
       const data = await response.json();
       console.log("data : ", data);

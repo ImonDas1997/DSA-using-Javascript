@@ -1,9 +1,14 @@
 import { navbar } from "./navbar.js";
 document.body.innerHTML = navbar();
 
+
+
+
+
+
 async function getData() {
   let parent = document.getElementById("data");
-  let res = await fetch("http://jsonplaceholder.typicode.com/posts");
+  let res = await fetch("http://jsonplaceholder.typicode.com/users");
   let data = await res.json();
   append(data, parent);
 }

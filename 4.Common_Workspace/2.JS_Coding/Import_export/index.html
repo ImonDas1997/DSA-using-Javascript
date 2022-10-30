@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-
-</body>
+  </head>
+  <body>
+  </body>
 </html>
 
+<script type="module">
+  import {navbar} from "./navbar.js";//syntsx for importing
 
-    <script type="module"> 
-        import {navbar} from './2JS_Coding./components/navbar.js'
-         navbar().then((res) =>{ 
-            document.body.innerHTML= res
-            }) 
-         
-         </script>
-  
-       
+  document.body.innerHTML = navbar();
+
+  //   //if you want to reuse some html code in different page in that case we have
+  // export that html code from the specific hml page whixh we will craete and import
+  // it in all pages where we want to reuse it...important this is just use
+  // type="module" inthe script tag.....
+
+</script>
+

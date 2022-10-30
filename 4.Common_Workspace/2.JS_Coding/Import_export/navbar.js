@@ -10,6 +10,10 @@ function navbar() {
           <h3><a href="#">Login</a></h3> 
 
              </div> 
-             </div>`
+             </div>`;
 }
-export default navbar
+function test() {}
+//for multiple export syntax is  -->export (navbar,test)
+//export default navbar--> if u use it dont use {}in import
+
+export { navbar };

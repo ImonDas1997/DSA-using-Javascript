@@ -1,0 +1,1 @@
+pass by referance and pass by value in javascipt.

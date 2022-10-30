@@ -33,3 +33,5 @@ get api data---> https://reqres.in/
 good ide-->https://replit.com/~
 
 omdb api ---->https://www.omdbapi.com/
+
+notes taking-->notion.so

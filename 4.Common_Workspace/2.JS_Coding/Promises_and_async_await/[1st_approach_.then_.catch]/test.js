@@ -2,7 +2,7 @@
 // Sometimes a piece of code will take 'x' seconds to execute.
 //  Depending on the it, we have other piece of code.
 //  This other piece of code is dependent on first piece of code.
-
+//a perticualr website wont alow you to go forward untill u do a perticular thing.then promise come in to piture.
 // Promises have consequences.
 // 1. They will be fullfilled.
 // 2. They will not be fullfilled.
@@ -19,15 +19,24 @@ function append(s) {
 
     script.onload = function () {
       resolve("Script loading done");
-      hellow(); //dependent on script to get completely loaded
+      //dependent on script to get completely loaded from myScript.js
     };
     script.onerror = function () {
       reject("Not loaded");
     };
   });
 }
-append("/myScript.js");
-
+append("myScript.js")
+  .then(function (res) {
+    hellow();
+    append("myScript2.js").then(function (res) {
+      hellow2(); //dependent
+    });
+  })
+  .catch(function (e) {
+    console.log("e:", e);
+  });
+//a perticualr website wont alow you to go forward untill u do a perticular thing.then promise come in to piture.
 // solution is -->
 
 // var promise = new Promise()

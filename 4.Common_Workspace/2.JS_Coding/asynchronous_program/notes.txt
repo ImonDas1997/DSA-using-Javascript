@@ -1,0 +1,34 @@
+//Asynchronous Execution Multiple resource. 
+//Multiple execution at a time.
+//But Js is Single threaded, it cannot do multiple things at same time.
+
+what is synchronous programming
+line by line execution of code
+reality of each programming language
+Js can do only one task at a time.
+
+non-blocking behavior is called asynchronous
+We want Js to carry on without waiting for a code to get executed
+
+Js is single-threaded so we need a partner, browser.
+
+Js can act asynchronous with the help of a friend.
+
+Whenever Js Engine encounters a piece of code that will take a long time to execute, it hands over it's execution to browser.
+Browser now takes care of that task and when its finished, it pings the Js engine that the task is done.
+That's how Js engine and Browser work together to make Javascript capable of asynchronous programming.
+
+What is setTimeout()?
+setTimeout sets a timer which executes a function or specified piece of code once the timer expires.
+
+Message Queue It's a one more data structure that Js to add next code to execute. Such code are called tasks, since they need more time to execute. Tasks are added to the queue whenever Js finds a function which will take some time to execute.
+
+Whenever Js finds Functions like setTimeout and setInterval which requires a particular time to execute, it also add them to the message queue.
+
+JavaScript runs a loop that looks for new messages/tasks on the message queue and pushes them onto the call stack to be executed.
+
+However, the event loop gives priority to the code currently on the call stack. It pushes a new message from the Queue onto the stack after all the code in the stack have been executed and the call stack is empty.
+
+Queue holds all the code that will require a longer time to execute. Especially, network requests.
+
+Most programs you write often tend to be synchronous. This means that actions in code happen one at a time.

@@ -1,1 +1,8 @@
-pass by referance and pass by value in javascipt.
+1.pass by referance and pass by value in javascipt.
+
+In JavaScript, when a function is called, the arguments can be passed in two ways, either Pass by value or Pass by reference (address).
+--> Primitive data types such as string, number, null, undefined, and boolean, are passed by value .
+--->  non-primitive data types such as objects, arrays, and functions are passed by reference in Javascript.
+
+
+------------------------------------------------------------------------

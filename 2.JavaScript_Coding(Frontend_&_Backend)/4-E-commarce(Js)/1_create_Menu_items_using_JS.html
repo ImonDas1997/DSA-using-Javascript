@@ -5,30 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #item {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 20px;
+        gap: 0px 25px;
+      }
+    </style>
   </head>
   <body>
-    <div id="container"></div>
+    <div id="item"></div>
   </body>
 </html>
 
 <script>
-    let mensData=[
-  id:1,
-  image_url:"",
-  name:"",
-  price:,
-  strikedoffprice},]
-    mensData.forEach(function (el) {
-      let card = document.createElement("div");
-      //creating image
-      let productImg = document.createElement("img");
-      //createing h3
-      let title = document.createElement("h3");
-      //creating p
-      let price = document.createElement("p");
-      //creating button
-      let btn = document.createElement("button");
-      card.append(productImg, title, price, btn);
-      document.querySelector("#container").append(card);
-    });
+  let mensData = [
+    {
+      id: 1,
+      image_url:
+        "https://www.bigbasket.com/media/uploads/p/s/40026603_9-bb-royal-cuminjeera-whole.jpg",
+      name: "Cumin// - Whole",
+      price: 120,
+    },
+    {
+      id: 2,
+      image_url:
+        "https://www.bigbasket.com/media/uploads/p/mm/40213324_3-wellberg-mini-chopper-with-3-blades-for-cutting-vegetables-fruits-red-1-pc.jpg",
+      name: "Mini Chopper With 3 Blades - For Cutting Vegetables & Fruits, Red, 1 pc ",
+      price: 179,
+    },
+    {
+      id: 3,
+      image_url:
+        "https://www.bigbasket.com/media/uploads/p/mm/40189244_5-kelloggs-muesli-breakfast-cereal-with-multigrain-21-fruit-nut-seeds.jpg",
+      name: "Muesli Breakfast Cereal - With Multigrain & 21% Fruit, Nut & Seeds",
+      price: 345,
+    },
+  ];
+  mensData.forEach(function (el) {
+    let card = document.createElement("div");
+    let productImg = document.createElement("img");
+    productImg.src = el.image_url;
+    let title = document.createElement("h3");
+    title.innerText = el.name;
+    let price = document.createElement("p");
+    price.innerText = "Price :" + el.price;
+
+    let btn = document.createElement("button");
+    btn.innerText = "Add to Cart";
+    card.append(productImg, title, price, btn);
+
+    document.querySelector("#item").append(card);
+  });
+
+  console.log("imondas");
 </script>

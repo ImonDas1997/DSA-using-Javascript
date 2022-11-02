@@ -43,10 +43,20 @@
         <i class="fa fa-map-marker" aria-hidden="true">&nbsp;bangalore</i>
       </div>
       <div>
-        <i class="fa fa-user-circle" aria-hidden="true">&nbsp; <a href="SignUp.html"> Sign Up |</a>
-        <a href="Login.html">Login</a></i>
+        <i class="fa fa-user-circle" aria-hidden="true"
+          >&nbsp; <a href="SignUp.html"> Sign Up |</a>
+          <a href="Login.html">Login</a></i
+        >
       </div>
-      <div>Name: <script>document.write(localStorage.getItem('name'));</script><button onclick="Logout()" style="float: right;margin-top: 2px;">Logout</button></div>
+      <div>
+        Name:
+        <script>
+          document.write(localStorage.getItem("name"));
+        </script>
+        <button onclick="Logout()" style="float: right; margin-top: 2px">
+          Logout
+        </button>
+      </div>
 
       <div></div>
       <div>
@@ -84,11 +94,11 @@
             width="20px;"
             height="20px;"
             alt=""
-          /> <a href="cartItem.html"><button>
-          My Basket</button></a>
-        </span>you have
-        <span id="idid"> &nbsp;&nbsp; &nbsp;</span>&nbsp;Items
-       &nbsp;&nbsp; &nbsp; <p>Total Price:<span id="rr"></span></p>
+          />
+          <a href="cartItem.html"><button>My Basket</button></a> </span
+        >you have <span id="idid"> &nbsp;&nbsp; &nbsp;</span>&nbsp;Items
+        &nbsp;&nbsp; &nbsp;
+        <p>Total Price:<span id="rr"></span></p>
       </div>
       <div></div>
 
@@ -248,10 +258,8 @@
     <h1 style="text-align: center; font-size: 23px; margin-top: 20px">
       All Products
     </h1>
-    <div id="item">
+    <div id="item"></div>
 
-    </div>
-   
     <h1 style="text-align: center; font-size: 23px; margin-top: 20px">
       Most Popular
     </h1>

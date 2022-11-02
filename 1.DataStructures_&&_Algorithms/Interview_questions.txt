@@ -6,3 +6,4 @@ In JavaScript, when a function is called, the arguments can be passed in two way
 
 
 ------------------------------------------------------------------------
+whatis javascript clouser and debouncer ?

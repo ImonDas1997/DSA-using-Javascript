@@ -1,0 +1,8 @@
+ //package.json is kundoli of your project..just kusti..name ki ki ache sb infomation about this project
+
+ requirment..>
+
+ frontend-->
+ create.html----> user can post pics 
+ 1.caption of post 
+ 2.picture of post -->u will be uploading picture from ur local path to image hosting service and from there you will be able to see all pictures in ur insta app.

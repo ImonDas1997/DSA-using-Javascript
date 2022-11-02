@@ -35,3 +35,5 @@ good ide-->https://replit.com/~
 omdb api ---->https://www.omdbapi.com/
 
 notes taking-->notion.so
+
+image freehosting-->https://api.imgbb.com/

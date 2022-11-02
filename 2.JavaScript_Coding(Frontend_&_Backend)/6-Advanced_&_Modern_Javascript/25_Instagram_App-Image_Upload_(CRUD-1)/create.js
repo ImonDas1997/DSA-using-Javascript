@@ -52,3 +52,28 @@ const handleImage = async () => {
 
   image_url = data.data.display_url;
 };
+
+const createPost = async () => {
+  //1. grab all the data
+  let id = document.getElementById("id").value;
+  let caption = document.getElementById("caption").value;
+  //2. pack all data to be sent in object
+  let send_this_data = {
+    id,
+    caption,
+    image_url,
+  };
+
+  //above data is accesible to whom? > local
+  //is it supposed to be accesible to everyone? →> yes
+  //where above data should go? -> server (local server )
+  //json-server package.
+  let res = await fetch("http://localhost:3000/posts", {
+    method: "POST",
+    body: JSON.stringify(send_this_data),
+    headers: { "Content-Type": "application/json" },
+  });
+  let data = await res.json();
+  console.log("data : ", data); //all data goint to json server... just check open http://localhost:3000/posts and check .. u will see all objects
+  //fetch get request will take all data from server and just show it in frontensd. very simple..
+};

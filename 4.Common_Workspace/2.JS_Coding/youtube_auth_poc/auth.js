@@ -4,17 +4,15 @@ class User {
   validateUsername(username) {
     return username.includes("@") ? false : true;
   }
-  
+
   validatePassword(password) {
     return password.length < 8 ? false : true;
   }
 
   async signUP(n, e, u, p, m, d) {
-   
     let isValidated = this.validateUsername(u) && this.validatePassword(p);
 
     if (isValidated) {
-      
       this.name = n;
       this.email = e;
       this.username = u;
@@ -33,12 +31,10 @@ class User {
       });
       const data = await response.json();
       console.log("data : ", data);
-
-      
     }
   }
 }
-  let y = new User();
+let y = new User();
 
 const Register = () => {
   const reg_form = document.getElementById("reg_Form");
@@ -51,4 +47,5 @@ const Register = () => {
 
   y.signUP(name, email, username, password, mobile, description);
   console.log("user : ", y);
+  a;
 };

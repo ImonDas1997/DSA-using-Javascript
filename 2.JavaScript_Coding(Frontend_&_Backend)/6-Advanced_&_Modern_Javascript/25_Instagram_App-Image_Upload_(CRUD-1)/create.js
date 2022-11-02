@@ -77,3 +77,5 @@ const createPost = async () => {
   console.log("data : ", data); //all data goint to json server... just check open http://localhost:3000/posts and check .. u will see all objects
   //fetch get request will take all data from server and just show it in frontensd. very simple..
 };
+
+//run json server using this --> json-server --watch db.json

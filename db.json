@@ -1,23 +1,27 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "id": "1",
+      "caption": "imon",
+      "image_url": "https://i.ibb.co/thWpxvx/1667071285391.jpg"
+    },
+    {
+      "id": "2",
+      "caption": "Imon Diwali",
+      "image_url": "https://i.ibb.co/pZJTRz3/chotto-baby.jpg"
     },
     {
       "id": "3",
-      "caption": "imon",
-      "image_url": "https://i.ibb.co/bHkjDXn/RE4wtcY.jpg"
-    }
-  ],
-  "comments": [
+      "caption": "Birthday",
+      "image_url": "https://i.ibb.co/k9rgcBR/DSC05188.jpg"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": "4",
+      "caption": "yooooo",
+      "image_url": "https://i.ibb.co/86s3M9J/DSC04683.jpg"
     }
   ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }

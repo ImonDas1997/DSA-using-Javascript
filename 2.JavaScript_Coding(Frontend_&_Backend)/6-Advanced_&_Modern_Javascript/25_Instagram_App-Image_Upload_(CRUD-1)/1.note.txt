@@ -11,3 +11,9 @@
 
  json server link-->https://www.npmjs.com/package/json-server
  //run json server using this --> json-server --watch db.json
+
+
+
+ Currently, we have JSON server on our local system. To make it accessible in https://xyz.com format, we will have to deploy our backend to heroku.
+
+Follow the tutorial to deploy your backend to heroku server.

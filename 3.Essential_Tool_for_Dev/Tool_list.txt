@@ -39,3 +39,5 @@ notes taking-->notion.so
 image freehosting-->https://api.imgbb.com/
 
 json server link-->https://www.npmjs.com/package/json-server
+
+host your app->netlify

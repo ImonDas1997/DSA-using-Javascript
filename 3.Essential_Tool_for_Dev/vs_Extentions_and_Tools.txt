@@ -16,7 +16,8 @@ settings sync
 microsooft edge tool for vs code
 Eslint
 tabnine
-
+pieces for vs code
+turbo console log--> press cntrl+alt+L
 
 
 Themes------>
@@ -24,3 +25,8 @@ cobult2
 community material theme
 material theme iconone dark procesmaterial theme
 shades of purple
+
+
+
+windows app->
+pieces  windows app

@@ -125,3 +125,5 @@ const UpdatePost = async () => {
 //CRUD
 //CREATE, READ, UPDATE, DELETE ADDPOST, GETDATA,
 //POST, GET, PUT & PATCH, DELETE. Dod
+
+//pagination

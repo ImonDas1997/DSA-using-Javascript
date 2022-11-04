@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": "2",
+      "caption": "Green Picture",
+      "image_url": "https://i.ibb.co/bHkjDXn/RE4wtcY.jpg"
+    },
+    {
+      "id": "ixwG5Pv",
+      "caption": "imon",
+      "image_url": "https://i.ibb.co/thWpxvx/1667071285391.jpg"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

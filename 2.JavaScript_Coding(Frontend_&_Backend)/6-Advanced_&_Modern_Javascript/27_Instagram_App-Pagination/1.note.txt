@@ -1,0 +1,18 @@
+ //package.json is kundoli of your project..just kusti..name ki ki ache sb infomation about this project
+
+ requirment..>
+
+ frontend-->
+ create.html----> user can post pics 
+ 1.caption of post 
+ 2.picture of post -->u will be uploading picture from ur local path to image hosting service and from there you will be able to see all pictures in ur insta app.
+
+
+
+ json server link-->https://www.npmjs.com/package/json-server
+ 
+ //***********************run json server using this --> json-server --watch db.json
+
+ -->Currently, we have JSON server on our local system. To make it accessible in https://xyz.com format, we will have to deploy our backend to heroku.
+
+ Follow the tutorial to deploy your backend to heroku server.

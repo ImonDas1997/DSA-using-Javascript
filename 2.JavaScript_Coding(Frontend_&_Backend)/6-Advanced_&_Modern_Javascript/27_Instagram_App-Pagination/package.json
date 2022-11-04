@@ -1,0 +1,21 @@
+{
+  "name": "dsa-using-javascript",
+  "version": "1.0.0",
+  "description": "my app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ImonDas1997/DSA-using-Javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ImonDas1997/DSA-using-Javascript/issues"
+  },
+  "homepage": "https://github.com/ImonDas1997/DSA-using-Javascript#readme"
+}
+
+

@@ -62,3 +62,77 @@ function append_movie(data) {
     m_div.append(div);
   });
 }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//------------------------------------------this is just for carusal-->u can ignore it just.!!!
+let carousel_div = document.getElementById("carousel");
+
+function carousel() {
+  //all of this images should be visible one by one?
+  //how can i access first image? -> images [0]
+  //how can i access third image? images [2]
+  //how long until i append second image? →> 3 seconds
+  let images = [
+    "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/9119/1329119-h-ef64fcf3d1f9",
+    "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/7976/1317976-h-e672d8d911fe",
+    "https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1_5x/sources/r1/cms/prod/3064/1323064-h-dcaae091e676",
+  ];
+
+  let imgElement = document.createElement("img");
+  imgElement.src = images[0];
+  carousel_div.append(imgElement);
+
+  //as soon as website open show →> images [0]
+  //interval of 3 seconds
+  //next image? -> images [1] l
+
+  let i = 1;
+
+  setInterval(function () {
+    //show me 1 after 3 seconds
+    //show me 2 after 3 seconds
+    if (i === images.length) {
+      i = 0;
+    }
+
+    //append images
+
+    imgElement.src = images[i];
+    carousel_div.append(imgElement);
+    i++;
+  }, 3000);
+}
+carousel();

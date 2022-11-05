@@ -18,9 +18,14 @@
     </style>
   </head>
   <body>
-    <div id="search_div">
+    <div>
       Search Movie :
-      <input oninput="search_movie()" placeholder="search Movie" />
+      <input
+        oninput="debounce(search_movie,1000)"
+        placeholder="search Movie"
+        id="live_search"
+      />
+      <!--   we need to debounce serch movie function in every new letter type.debounce is just murder of that call or clear of that call..its is bouncing all the calls once new calls are coming -->
     </div>
     <div id="loader_div">
       <img

@@ -1,0 +1,4 @@
+index.html ad index.js has has only sttic data
+
+search html and js has omdb api...
+from index we will go to searchmovie and search movie and we will see all movie there in search html

@@ -40,4 +40,6 @@ image freehosting-->https://api.imgbb.com/
 
 json server link-->https://www.npmjs.com/package/json-server
 
+heroku server deployment(backed and frotend)---> just serch heroku cli ad dowlod istaller ad follow steps for deployment
+
 host your app->netlify

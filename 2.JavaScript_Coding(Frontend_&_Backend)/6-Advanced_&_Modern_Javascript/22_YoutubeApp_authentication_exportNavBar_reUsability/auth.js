@@ -11,57 +11,16 @@
 //00PS->we will be using this design principle
 
 class User {
-  constructor() {
-    //this.name
-  }
+  constructor() {}
+  //this.name
   validateUsername(username) {
-    // if (username.includes ('@')) {
-    //return false;
-    // } else {
-    // return true;
-
     return username.includes("@") ? false : true;
   }
+
   validatePassword(password) {
-    //if password length is less than 8, return false else true
     return password.length < 8 ? false : true;
   }
 
-  async signUP(n, e, u, p, m, d) {
-    //check if user is submitting valid username & password
-    //u-> username
-    //p-> password
-    let isValidated = this.validateUsername(u) && this.validatePassword(p);
-
-    if (isValidated) {
-      //good to store data
-      this.name = n;
-      this.email = e;
-      this.username = u;
-      this.password = p;
-      this.mobile = m;
-      this.description = d;
-
-      const register_api = `https://masai-api-mocker.herokuapp.com/auth/register`;
-
-      const response = await fetch(register_api, {
-        method: "POST",
-        body: JSON.stringify(this),
-        headers: {
-          "Content-Type": "application/json",
-        },
-        mode: "no-cors",
-      });
-      const data = await response.json();
-      console.log("data : ", data);
-
-      //nature of fetch? -> function
-      //if its a function, does it eat? → arguments
-      //first argument → url
-      //whats the defaULT request of fetch? →> GET
-      //WE ARE THIS TIME GIVING DATA TO SERVER
-    }
-  }
   async Login(u, p) {
     const login_data = {
       username: u,
@@ -74,13 +33,45 @@ class User {
       headers: {
         "Content-Type": "application/json",
       },
-      mode: "no-cors",
     });
     const data = await response.json();
+    console.log("data : ", data);
     return data;
   }
-}
 
+  async signUP(n, e, u, p, m, d) {
+    //check if user is submitting valid username & password
+    //u-> username
+    //p-> password
+    let isValidated = this.validateUsername(u) && this.validatePassword(p);
+
+    if (isValidated) {
+      this.name = n;
+      this.email = e;
+      this.username = u;
+      this.password = p;
+      this.mobile = m;
+      this.description = d;
+
+      const x = `https://masai-api-mocker.herokuapp.com/auth/register`;
+
+      const response = await fetch(x, {
+        method: "POST",
+        body: JSON.stringify(this),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await response.json();
+      console.log("data : ", data);
+      //nature of fetch? -> function
+      //if its a function, does it eat? → arguments
+      //first argument → url
+      //whats the defaULT request of fetch? →> GET
+      //WE ARE THIS TIME GIVING DATA TO SERVER
+    }
+  }
+}
 let user = new User();
 
 const Register = () => {
@@ -94,27 +85,50 @@ const Register = () => {
 
   user.signUP(name, email, username, password, mobile, description);
   console.log("user : ", user);
+  //input->
+  // pablo234,
+  // pablo234@gmail.com
+  // pablo234
+  // pablo234
+  // 6566567787
+  // xyz
+
+  // o/p-->registration success on console
 };
 
 const Login = async () => {
   const username = document.getElementById("login-username").value;
   const password = document.getElementById("login-password").value;
+  let data = await user.Login(username, password);
+  // input->pablo234,pablo234
+  //p/p-->{token: '7e70523be684d753ab4963adc07ecaa4', error: false}
 
-  let { token } = await user.Login(username, password);
-  getProfile(username, token);
+  getProfile(username, data.token);
+  //alternative way of writing (getting token data from server data object)
+  // let { token } = await user.Login(username, password); //directly takling value of token form server data object
+
+  // getProfile(username, token);
 };
 
-const getProfile = async () => {
-  let api_link = `https://masai-api-mocker.herokuapp.com/user/$(username)`;
-
+const getProfile = async (username, token) => {
+  let api_link = `https://masai-api-mocker.herokuapp.com/user/${username}`;
   let response = await fetch(api_link, {
     headers: {
-      Authorization: `bearer $(token)`,
+      Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
-      "Access-Control-Allow-Origin": "*",
     },
-    mode: "no-cors",
   });
   let data = await response.json();
-  console.log("data:", data);
+  console.log("data : ", data);
+
+  //o/p-->
+  // description: "xyz";
+  // email: "pablo234@gmail.com";
+  // mobile: "6766543343";
+  // name: "pablo234";
+  // token: "7e70523be684d753ab4963adc07ecaa4";
+  // username: "pablo234";
+  //now u can show all the dta to frontend
 };
+
+//masai repo link--->https://github.com/masai-school/api-mocker/wiki/Authentication-API

@@ -8,12 +8,14 @@
     <style>
       #movies {
         display: inline-grid;
-        grid-template-columns: 33% 33% 33% ;
+        grid-template-columns: 33% 33% 33%;
         /* width : 30%; &*/
         margin-left: 10%;
         margin-right: 10%;
         margin-top: 5%;
+        grid-gap: 20px;
       }
+
       #loader_div {
         display: none;
       }
@@ -70,11 +72,7 @@
     <div id="carousel"></div>
     <div>
       Search Movie :
-      <input
-        
-        placeholder="search Movie"
-        id="live_search"
-      />
+      <input placeholder="search Movie" id="live_search" />
       <!--   we need to debounce serch movie function in every new letter type.debounce is just murder of that call or clear of that call..its is bouncing all the calls once new calls are coming -->
     </div>
     <div id="loader_div">

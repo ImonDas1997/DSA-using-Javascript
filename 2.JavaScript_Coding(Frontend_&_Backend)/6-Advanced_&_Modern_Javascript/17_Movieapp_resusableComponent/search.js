@@ -9,6 +9,11 @@
 //avengers
 //we will bounce 1 ,2 ,3 records and so on because previous api calls are invalid once we type new keyward we need new reselt from api....
 
+import { navbar } from "./components/navbar.js";
+let navbar_div = document.getElementById("topnav");
+navbar_div.innerHTML = navbar();
+//importing navbar here
+
 async function search_movie() {
   let loder_div = document.getElementById("loader_div");
   loder_div.style.display = "block";
@@ -39,6 +44,13 @@ function debounce(func, delay) {
     func();
   }, delay);
 }
+//manually adding eventListners in the js file because we use import export who has type=module
+let inputBox = document.getElementById("live_search");
+inputBox.addEventListener("input", function () {
+  debounce(search_movie, 1000);
+});
+let search_div = document.getElementById("button");
+search_div.style.display = "none";
 
 //dev tool go for network tab and go for fetch tab and serch with all parameter u will see all query string item and passing and calling api...
 

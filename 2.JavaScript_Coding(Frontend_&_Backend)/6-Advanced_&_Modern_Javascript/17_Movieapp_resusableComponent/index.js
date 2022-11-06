@@ -1,3 +1,8 @@
+import { navbar } from "./components/navbar.js";
+let navbar_div = document.getElementById("topnav");
+navbar_div.innerHTML = navbar();
+
+//importing navbar here
 const movies = [
   {
     name: "Babli Bouncer",
@@ -96,6 +101,7 @@ function sortLH() {
 
   appendMovies(data);
 }
+
 function sortHL() {
   let data = movies;
   data = data.sort((a, b) => b.rating - a.rating);
@@ -145,3 +151,12 @@ getmeData
 
 //what do you pass to callback function?
 //resolve, reject
+
+let LowToHighSort = document.getElementById("LH");
+LowToHighSort.addEventListener("click", function () {
+  sortLH();
+});
+let HighToLow = document.getElementById("HL");
+HighToLow.addEventListener("click", function () {
+  sortHL();
+});

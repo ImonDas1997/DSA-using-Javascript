@@ -7,33 +7,71 @@
     <title>Document</title>
     <style>
       #movies {
-        display: grid;
-        grid-template-columns: repeat(4, 0.5fr);
-        margin: 3%;
-        justify-items: center;
+        display: inline-grid;
+        grid-template-columns: 33% 33% 33% ;
+        /* width : 30%; &*/
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
       }
       #loader_div {
         display: none;
+      }
+      #topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      #topnav a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      #topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      #topnav a.active {
+        background-color: #04aa6d;
+        color: white;
       }
 
       #carousel {
         text-align: center;
         padding-top: 2%;
         padding-bottom: 2%;
-        width: 71vh;
+        width: 200vh;
       }
       #carousel img {
         width: 100%;
         height: 500px;
       }
+      #button {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: -41px 2px;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
+    <div id="topnav"></div>
     <div id="carousel"></div>
     <div>
       Search Movie :
       <input
-        oninput="debounce(search_movie,1000)"
+        
         placeholder="search Movie"
         id="live_search"
       />
@@ -50,6 +88,6 @@
   </body>
 </html>
 
-<script src="search.js">
+<script type="module" src="search.js">
   //oninput very important concept..above see.
 </script>

@@ -17,3 +17,8 @@ console.log(obj["two"]);
 
 //data type of index and keys-->
 //index are integer but keys  are strings
+
+// coersion->data type changing in one to diffremt data type  is called coersion inn js.
+
+let x = "5" - 5; //convertig string to a number//javascript try to not give an error and chnging data type and printing actual ans
+console.log(x);

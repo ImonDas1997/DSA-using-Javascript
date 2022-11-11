@@ -36,8 +36,8 @@ getData();
 const append = (data, container) => {
   container.innerHTMl = null;
   data.forEach((el) => {
-    let div = document.createElement("div");
-    div.setAttribute("class", "item");
+    let card = document.createElement("card");
+    card.setAttribute("class", "item");
 
     let image = document.createElement("img");
     image.src = el.image;
@@ -71,7 +71,7 @@ const append = (data, container) => {
       UpdatePost(el.id);
     });
 
-    div.append(
+    card.append(
       image,
       p_name,
       p_price,
@@ -80,7 +80,7 @@ const append = (data, container) => {
       rem_btn,
       update_btn
     );
-    container.append(div);
+    container.append(card);
   });
 };
 

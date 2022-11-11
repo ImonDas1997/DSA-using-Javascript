@@ -1,27 +1,27 @@
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
-#input-box{
-   border:1px solid red;
-   height:500px;
-   width:30%;
+#input-box {
+  border: 1px solid red;
+  height: 658px;
+  width: 94%;
+  margin-top: 5vh;
 }
-#name{
- margin-bottom:20px;
-
+#name {
+  margin-bottom: 20px;
 }
-#price{
- margin-bottom:20px;
+#price {
+  margin-bottom: 20px;
 }
-#description{
- margin-bottom:20px;
+#description {
+  margin-bottom: 20px;
 }
-#date{
- margin-bottom:20px;
+#date {
+  margin-bottom: 20px;
 }
-#img{
- margin-bottom:20px;
+#img {
+  margin-bottom: 20px;
 }
-#delivery{
- margin-bottom:20px;
+#delivery {
+  margin-bottom: 20px;
 }

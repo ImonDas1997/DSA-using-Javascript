@@ -13,27 +13,124 @@
         margin: 3%;
         justify-items: center;
       }
+      #id {
+        margin-left: 5vh;
+        width: 85%;
+        background: none;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 6px 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      .item {
+       margin-left: 5vh;
+        width: 85%;
+        background: none;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 6px 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      #name {
+        margin-left: 5vh;
+        width: 85%;
+        background: none;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 6px 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      #price {
+        margin-left: 5vh;
+        width: 85%;
+        background: none;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 6px 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      #description {
+        margin-left: 5vh;
+        width: 85%;
+        background: none;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 6px 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      #delivery {
+        margin-left: 5vh;
+        width: 85%;
+        background: none;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 6px 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      #img {
+        margin-left: 5vh;
+        width: 85%;
+        background: none;
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 6px 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      #add_product {
+        margin-left: 5vh;
+        width: 85%;
+        margin-bottom: 20px;
+        font-size: 16px;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 0.5fr 1.4fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+      }
     </style>
   </head>
   <body>
     <h1>Admin Panel</h1>
-    <div id="input-box">
-      <input type="text" placeholder="id" id="id" />
-      <input type="text" placeholder="Product-Name" id="name" />
-      <input type="number" placeholder="Product-Price" id="price" />
-      <input type="text" placeholder="Description" id="description" />
-      <input type="date" placeholder="delivery" id="delivery" />
-      <input type="text" placeholder="img-url" id="img" />
+    <div class="grid-container">
+      <div id="input-box">
+        <input type="text" placeholder="id" id="id" />
+        <input type="text" placeholder="Product-Name" id="name" />
+        <input type="number" placeholder="Product-Price" id="price" />
+        <input type="text" placeholder="Description" id="description" />
+        <input type="date" placeholder="delivery" id="delivery" />
+        <input type="text" placeholder="img-url" id="img" />
 
-      <button onClick="createProduct()" id="add_product">Add Product</button>
+        <button onClick="createProduct()" id="add_product">Add Product</button>
+        <div id="sort" style="text-align: center">
+          <h1>Sort Based On Price</h1>
+          <button id="sort-low-to-high">Sort Low To High</button>
+          <button id="sort-high-to-low">Sort High To Low</button>
+        </div>
+        <div id="filter" style="text-align: center">
+          <h1>Filter By Price</h1>
+          <button id="greater-than">Price>4000</button>
+          <button id="less-than">Price<=4000</button>
+        </div>
+      </div>
+      <div id="container"></div>
     </div>
-    <div id="container"></div>
-    <div id="sort"  style="text-align: center;">
-      <h1>Sort Based On Price</h1>
-      <button id="sort-low-to-high">Sort Low To High</button>
-      <button id="sort-high-to-low">Sort High To Low</button>
-    </div>
-<!-- <div id="remove">
+
+    <!-- <div id="remove">
 <input type="text" placeholder="id" id="u_id" />
       
     <button onClick="remove()" id="remove_item">Remove</button>
@@ -42,12 +139,6 @@
       <input type="text" placeholder="id" id="u_id" />
        <input type="text" placeholder="Product-Price" id="u_price" />
       <button onClick="shortHL()" id="update_price">Update Price</button> -->
-        <div id="filter" style="text-align: center;">
-      <h1>Filter By Price</h1>
-      <button id="greater-than">Price>4000</button>
-      <button id="less-than">Price<=4000</button>
-    </div>
-    
   </body>
 </html>
 <script src="./src/scripts/index.js"></script>

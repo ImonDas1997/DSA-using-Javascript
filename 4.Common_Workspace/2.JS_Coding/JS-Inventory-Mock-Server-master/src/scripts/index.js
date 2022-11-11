@@ -38,9 +38,11 @@ const append = (data, container) => {
   data.forEach((el) => {
     let div = document.createElement("div");
     div.setAttribute("class", "item");
+
     let image = document.createElement("img");
     image.src = el.image;
-    image.style.height = "40vh";
+    image.style.height = "30vh";
+    image.style.width = "30vh";
     let p_name = document.createElement("h2");
     p_name.innerText = el.name;
 
@@ -65,9 +67,9 @@ const append = (data, container) => {
     let update_btn = document.createElement("Button");
     update_btn.setAttribute("class", "update_price");
     update_btn.innerText = "Update Price";
-update_btn.addEventListener("click",function(){
-UpdatePost(el.id)
-});
+    update_btn.addEventListener("click", function () {
+      UpdatePost(el.id);
+    });
 
     div.append(
       image,
@@ -130,7 +132,6 @@ const deletePost = async (id) => {
 };
 const UpdatePost = async (id) => {
   try {
-   
     let res = await fetch(`http://localhost:3000/products/${id}`, {
       method: "PATCH", //put -completely update
       body: JSON.stringify(send_this_data),
@@ -146,7 +147,7 @@ const UpdatePost = async (id) => {
 async function g4() {
   let product_div = document.getElementById("container");
   product_div.innerHTML = null;
-  let res = await fetch("http://localhost:3000/products?price_lte<=4000");
+  let res = await fetch("http://localhost:3000/products?price_gte=4000");
   let data = await res.json();
 
   append(data, product_div);
@@ -154,7 +155,7 @@ async function g4() {
 async function gl4() {
   let product_div = document.getElementById("container");
   product_div.innerHTML = null;
-  let res = await fetch("http://localhost:3000/products?price_gte >= 4001");
+  let res = await fetch("http://localhost:3000/products?price_lte=4001");
   let data = await res.json();
 
   append(data, product_div);

@@ -225,6 +225,7 @@ document.querySelector("#idid").style.color = "red";
 let total_price = cartTotal.reduce(function (acc, el) {
   return acc + el.price;
 }, 0);
+console.log(cartTotal);
 document.querySelector("#rr").innerText = total_price;
 document.querySelector("#rr").style.color = "red";
 

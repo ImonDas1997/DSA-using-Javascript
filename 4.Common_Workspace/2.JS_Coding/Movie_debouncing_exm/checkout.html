@@ -6,8 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/checkout.css" />
     <title>Checkout</title>
+    <style>
+      #movies {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 3%;
+        justify-items: center;
+      }
+    </style>
   </head>
   <body>
-    <script src="./src/scripts/checkout.js"></script>
+    <div id="movies"></div>
   </body>
 </html>
+<script src="./src/scripts/checkout.js"></script>

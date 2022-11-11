@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <title>Document</title>
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 3%;
+        justify-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Admin Panel</h1>
+    <div id="input-box">
+      <input type="text" placeholder="id" id="id" />
+      <input type="text" placeholder="Product-Name" id="name" />
+      <input type="number" placeholder="Product-Price" id="price" />
+      <input type="text" placeholder="Description" id="description" />
+      <input type="date" placeholder="delivery" id="delivery" />
+      <input type="text" placeholder="img-url" id="img" />
+
+      <button onClick="createProduct()" id="add_product">Add Product</button>
+    </div>
+    <div id="container"></div>
+    <div id="sort"  style="text-align: center;">
+      <h1>Sort Based On Price</h1>
+      <button id="sort-low-to-high">Sort Low To High</button>
+      <button id="sort-high-to-low">Sort High To Low</button>
+    </div>
+<!-- <div id="remove">
+<input type="text" placeholder="id" id="u_id" />
+      
+    <button onClick="remove()" id="remove_item">Remove</button>
+     </div>
+    <div id="update">
+      <input type="text" placeholder="id" id="u_id" />
+       <input type="text" placeholder="Product-Price" id="u_price" />
+      <button onClick="shortHL()" id="update_price">Update Price</button> -->
+        <div id="filter" style="text-align: center;">
+      <h1>Filter By Price</h1>
+      <button id="greater-than">Price>4000</button>
+      <button id="less-than">Price<=4000</button>
+    </div>
+    
+  </body>
+</html>
+<script src="./src/scripts/index.js"></script>

@@ -13,10 +13,19 @@ function append_movie(BookmovieArr) {
     p_name.innerText = el.Title;
     let btn = document.createElement("BUTTON");
     btn.innerText = "Movies In your cart";
-    
-    div.append(img, p_name, btn);
+    let btnBk = document.createElement("BUTTON");
+    btnBk.innerText = "Book Now";
+    btnBk.addEventListener("click", function () {
+      BookNow();
+    });
+
+    div.append(img, p_name, btn, btnBk);
     m_div.append(div);
   });
 }
 
 append_movie(BookmovieArr);
+
+function BookNow() {
+  alert("Booking succes");
+}

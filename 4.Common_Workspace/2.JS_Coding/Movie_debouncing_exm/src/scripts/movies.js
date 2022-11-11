@@ -25,7 +25,7 @@ function append_movie(data) {
     let p_name = document.createElement("p");
     p_name.innerText = el.Title;
     let btn = document.createElement("BUTTON");
-    btn.innerText = "Book Now";
+    btn.innerText = "ADD Movie to cart";
     btn.addEventListener("click", function () {
       addMovie(el);
     });
@@ -56,3 +56,4 @@ const addMovie = async (el) => {
 };
 
 let BookmovieArr = JSON.parse(localStorage.getItem("BookMOvie")) || [];
+

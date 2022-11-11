@@ -132,8 +132,12 @@ const deletePost = async (id) => {
 };
 const UpdatePost = async (id) => {
   try {
+    var new_price = prompt("Enter new price");
+    let send_this_data = {
+      price: new_price,
+    };
     let res = await fetch(`http://localhost:3000/products/${id}`, {
-      method: "PATCH", //put -completely update
+      method: "PATCH",
       body: JSON.stringify(send_this_data),
       headers: { "Content-Type": "application/json" },
     });

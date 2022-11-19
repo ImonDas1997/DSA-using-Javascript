@@ -1,0 +1,91 @@
+#navbar {
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+#navbar a {
+  color: white;
+  float: left;
+  text-align: center;
+  padding: 14px 15px;
+  text-decoration: none;
+  font-size: 20px;
+}
+#navbar a:hover {
+  background-color: blue;
+  color: black;
+}
+h2 {
+  color: aliceblue;
+  margin-left: 8vh;
+}
+#navbar a.active {
+  background-color: rgb(43, 0, 128);
+  color: brown;
+}
+#navbar button {
+  background-color: rgb(0, 0, 0);
+  float: right;
+}
+
+h1 {
+  text-align: center;
+}
+#mobile_name {
+  margin-left: 5vh;
+  width: 50%;
+  background: none;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 6px 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+#mobile_brand {
+  margin-left: 5vh;
+  width: 50%;
+  background: none;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 6px 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+#mobile_price {
+  margin-left: 5vh;
+  width: 50%;
+  background: none;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 6px 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+#mobile_image {
+  margin-left: 5vh;
+  width: 50%;
+  background: none;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 6px 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+#submitbox {
+  margin-left: 5vh;
+  width: 50%;
+  text-align: center;
+  padding: 6px 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+#input_data {
+  text-align: center;
+}

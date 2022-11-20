@@ -8,4 +8,4 @@ for(let el of str){
 }
 console.log(total)
 
-//Frequency Mapping
+//Frequency Mapping-

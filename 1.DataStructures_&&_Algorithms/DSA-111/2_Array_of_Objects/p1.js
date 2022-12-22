@@ -4,4 +4,4 @@ let strings = ["a", "b", "c", "d"];
 
 let arr = [{ a: 0 }, { b: 1, name: "Pappu" }, { c: 2 }, { d: 3 }];
 
-console.log(arr[1].name);
+console.log(arr[1].name);//gettig array index and gettig key anmd shoing the value .

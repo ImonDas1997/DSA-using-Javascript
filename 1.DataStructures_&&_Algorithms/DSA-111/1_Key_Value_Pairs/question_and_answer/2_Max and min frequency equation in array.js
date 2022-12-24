@@ -2,9 +2,9 @@
 
 // The size of the array is stored in a variable with the nameN
 
-// You have to solve the equation -15*x + 2*y, wherexis the smallest frequency of an element in the array, while
+// You have to solve the equation -15*x + 2*y, where x is the smallest frequency of an element in the array, while
 
-// yis the largest frequency of an element in the array
+// y is the largest frequency of an element in the array
 
 // For example, consider the value stored inN = 7, andarr = [1 2 2 3 3 3 5]
 

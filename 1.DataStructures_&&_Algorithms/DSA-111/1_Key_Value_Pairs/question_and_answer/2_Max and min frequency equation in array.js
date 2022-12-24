@@ -51,3 +51,25 @@
 // as3 has a frequency 3. So, the value ofx = 1, and the value ofy = 3
 
 // Therefore, the value of the equation becomes -15*[1] + 2*[3] = 21, which is the required output
+
+function minMAx(N, arr) {
+  let min = Infinity;
+  let max = -Infinity;
+  let obj = {};
+  for (let i = 0; i < arr.length; i++) {
+    if (obj[arr[i]] == undefined) {
+      obj[arr[i]] = 1;
+    } else {
+      obj[arr[i]]++;
+    }
+  }
+  for (let key in obj) {
+    if (obj[key] > max) {
+      max = obj[key];
+    }
+    if (obj[key] < min) {
+      min = obj[key];
+    }
+  }
+  console.log(max * 2 + min * 15);
+}

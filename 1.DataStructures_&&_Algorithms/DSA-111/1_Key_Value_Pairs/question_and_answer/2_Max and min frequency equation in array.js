@@ -69,6 +69,7 @@ function minMAx(N, arr) {
     }
     if (obj[key] < min) {
       min = obj[key];
+    
     }
   }
   console.log(max * 2 + min * 15);

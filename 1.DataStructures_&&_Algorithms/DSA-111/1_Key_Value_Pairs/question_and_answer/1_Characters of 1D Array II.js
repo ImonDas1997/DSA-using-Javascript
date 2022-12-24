@@ -7,7 +7,7 @@
 
 // '@'-> 0
 // '%'-> 1
-// '&'-> 2 
+// '&'-> 2
 // '#'-> 3
 // '^'-> 4
 
@@ -16,20 +16,19 @@
 // For example, consider the value stored inN = 5, and the value stored instr = @%&#^
 
 // Therefore, replacing each value with its corresponding value, we get -01234, which is the required answer.
- 
+
 //Input
 // The first line of the input contains the value stored inN
 
 // The next line stores the value stored instr
 
-
 // Output
 // Print the output as explained in the problem statement.
 
-// Sample Input 1 
+// Sample Input 1
 
-// 5
-// @%&#^
+N = 5;
+str = "@%&#^";
 // Sample Output 1
 
 // 01234
@@ -48,3 +47,5 @@ function char1DArray(N, str) {
   }
   console.log(bag);
 }
+
+char1DArray(N, str);

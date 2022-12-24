@@ -15,12 +15,13 @@ for (let i = 0; i < ageArr.length; i++) {
 // Print the total power of all the super heroes
 let total = 0;
 for (let obj of arr) {
+  //for of loop t access all elements
   total += obj.power;
 }
-console.log(total);
+console.log("Total is -->" + total);
 
-// Print the name and the power of super hero with maximum power
-// Print the name and the power of super hero with minimum power
+// Print the name and the power of super hero with maximum power->max value algorithom
+// Print the name and the power of super hero with minimum power-->min vaklue algorithom
 
 let max = 0;
 let maxsuper = "";
@@ -28,10 +29,12 @@ let min = Infinity;
 let minsuper = "";
 for (let el of arr) {
   if (el.power > max) {
+    //max algoritham
     max = el.power;
     maxsuper = el.name;
   }
   if (el.power < min) {
+    //max algoritham
     min = el.power;
     minsuper = el.name;
   }

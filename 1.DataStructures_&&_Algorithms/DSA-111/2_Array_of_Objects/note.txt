@@ -1,0 +1,4 @@
+we use for of  loop to access all element in array.
+
+max and min algoritghem.
+how to dfind maximum value and how to find minimum value....

@@ -8,20 +8,18 @@
 
 // Then the required output will be8+6 = 14, which is the required output
 
-
 // Input
 // The first line of the input contains the value stored inN
 
 // The next line containsNspace-separated integers denoting the value stored inarr
 
-
 // Output
 // Print thesum of all the elements of the array which are unique.
 
-// Sample Input 1 
+// Sample Input 1
 
-// 7
-// 3 5 3 3 8 5 6
+N = 7;
+arr = [3, 5, 3, 3, 8, 5, 6];
 // Sample Output 1
 
 // 14
@@ -33,7 +31,6 @@
 // 6 occurs 1 time
 // 5 occurs 2 times
 // 3 occurs 3 times
-
 
 // // Thus the required output will be 8 + 6 = 14
 
@@ -49,8 +46,10 @@ function appearOnce(N, arr) {
   let sum = 0;
   for (let key in obj) {
     if (obj[key] == 1) {
-      sum += +key;
+      sum +=(+key);
     }
   }
   console.log(sum);
 }
+
+appearOnce(N, arr);

@@ -49,7 +49,7 @@ function appearOnce(N, arr) {
   let sum = 0;
   for (let key in obj) {
     if (obj[key] == 1) {
-      sum += +key;
+      sum += (+key);
     }
   }
   console.log(sum);

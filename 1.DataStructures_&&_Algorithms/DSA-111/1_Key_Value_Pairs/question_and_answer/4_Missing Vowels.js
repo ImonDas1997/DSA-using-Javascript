@@ -48,3 +48,4 @@ function missingVowel(N, str) {
   }
   console.log(bag || -1);
 }
+missingVowel(6, "nature");

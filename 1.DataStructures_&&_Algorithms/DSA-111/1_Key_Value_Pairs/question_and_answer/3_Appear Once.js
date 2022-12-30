@@ -49,6 +49,7 @@ function appearOnce(N, arr) {
       sum += +key;
     }
   }
+
   console.log(sum);
 }
 
